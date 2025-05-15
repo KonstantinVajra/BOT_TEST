@@ -9,6 +9,7 @@ import logging
 import os
 import atexit
 import time
+from telebot.apihelper import ApiTelegramException
 
 # Настройка логирования
 logging.basicConfig(
@@ -61,11 +62,11 @@ class ReviewStates(StatesGroup):
 
 class ReviewBot:
     def __init__(self, token: str, admin_id: int, db_session):
-        self.state_storage = StateMemoryStorage()
+        """Initialize bot with token and admin user id"""
         self.bot = telebot.TeleBot(
             token,
-            state_storage=self.state_storage,
-            parse_mode=None,
+            state_storage=StateMemoryStorage(),
+            parse_mode='HTML',
             threaded=True
         )
         self.admin_id = admin_id
@@ -75,7 +76,6 @@ class ReviewBot:
         self.message_buffer = []  # Буфер для накопления сообщений
         self.max_buffer_size = 100  # Максимальный размер буфера
         self.setup_handlers()
-        self.setup_commands()
         logger.info(f"Бот инициализирован с admin_id: {admin_id}")
 
     def setup_commands(self):
@@ -118,12 +118,9 @@ class ReviewBot:
         # Handle item selection via deep linking
         self.bot.message_handler(func=lambda message: message.text and message.text.startswith('/select_'))(self.handle_select)
         
-        # Message handlers for collecting reviews - handle all forwarded messages from admin
+        # Message handlers for collecting reviews - handle all messages from admin
         self.bot.message_handler(
-            func=lambda message: (
-                message.from_user.id == self.admin_id and 
-                message.forward_from is not None
-            ),
+            func=lambda message: message.from_user.id == self.admin_id,
             content_types=['text', 'photo', 'video', 'voice', 'document', 'audio', 'animation']
         )(self.buffer_review)
 
@@ -280,9 +277,20 @@ class ReviewBot:
     def buffer_review(self, message):
         """Add message to buffer for batch processing"""
         logger.info("=== START BUFFERING MESSAGE ===")
+        logger.info(f"Message ID: {message.message_id}")
         logger.info(f"Message type: {message.content_type}")
         
-        # Проверяем размер буфера
+        # Добавляем расширенное логирование для пересланных сообщений
+        if message.forward_from_message_id:
+            logger.info(f"Original message ID: {message.forward_from_message_id}")
+        if message.forward_date:
+            logger.info(f"Forward date: {message.forward_date}")
+        if message.forward_from:
+            logger.info(f"Forwarded from user: {message.forward_from.id} ({message.forward_from.first_name})")
+        if message.forward_from_chat:
+            logger.info(f"Forwarded from chat: {message.forward_from_chat.id} ({message.forward_from_chat.title})")
+        
+        # Остальной код остается без изменений
         if len(self.message_buffer) >= self.max_buffer_size:
             logger.warning(f"Buffer is full ({self.max_buffer_size} messages). Please save current buffer first.")
             self.bot.reply_to(
@@ -312,11 +320,6 @@ class ReviewBot:
             logger.info("Has audio")
         if message.animation:
             logger.info("Has animation (GIF)")
-
-        if not message.forward_from:
-            logger.warning("Message is not forwarded - skipping")
-            self.bot.reply_to(message, "Пожалуйста, пересылайте сообщения от пользователей.")
-            return
 
         selection = self.current_selection.get(message.from_user.id)
         if not selection:
@@ -413,16 +416,31 @@ class ReviewBot:
                     logger.info(f"Message type: {msg.content_type}")
                     
                     # Получаем или создаем автора из кэша
-                    author_id = msg.forward_from.id
+                    if msg.forward_from:
+                        # Обычное пересланное сообщение
+                        author_id = msg.forward_from.id
+                        author_name = msg.forward_from.first_name
+                        author_username = msg.forward_from.username
+                    elif msg.forward_from_chat:
+                        # Автор скрыл свой профиль
+                        author_id = 0  # Специальный ID для анонимных авторов
+                        author_name = "аноним"
+                        author_username = None
+                    else:
+                        # Не пересланное сообщение
+                        author_id = msg.from_user.id
+                        author_name = msg.from_user.first_name
+                        author_username = msg.from_user.username
+
                     if author_id not in authors_cache:
                         logger.info(f"Looking up author {author_id}")
                         author = self.db.query(Author).filter_by(telegram_id=author_id).first()
                         if not author:
-                            logger.info(f"Creating new author: {msg.forward_from.first_name}")
+                            logger.info(f"Creating new author: {author_name}")
                             author = Author(
                                 telegram_id=author_id,
-                                username=msg.forward_from.username,
-                                display_name=msg.forward_from.first_name or 'аноним'
+                                username=author_username,
+                                display_name=author_name or 'аноним'
                             )
                             self.db.add(author)
                             self.db.commit()
@@ -592,18 +610,16 @@ class ReviewBot:
         )
 
     def run(self):
-        while True:
-            try:
-                logger.info("Starting bot polling...")
-                self.bot.polling(
-                    non_stop=True,
-                    interval=3,
-                    timeout=30
-                )
-            except Exception as e:
-                logger.error(f"Ошибка при работе бота: {str(e)}", exc_info=True)
-                logger.info("Перезапуск через 10 секунд...")
-                time.sleep(10)
-                continue
-            finally:
-                cleanup_lock() 
+        """Run the bot"""
+        try:
+            logger.info("Starting bot polling...")
+            self.setup_commands()  # Устанавливаем команды после успешного запуска
+            self.bot.polling(non_stop=True, interval=3)
+        except Exception as e:
+            logger.error(f"Error in bot polling: {e}")
+            if isinstance(e, ApiTelegramException) and e.error_code == 401:
+                logger.error("Unauthorized error - check bot token")
+            raise
+        finally:
+            cleanup_lock()
+            logger.info("Bot shutdown complete.") 
