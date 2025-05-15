@@ -49,10 +49,10 @@ class ReviewCategory(enum.Enum):
 class Author(Base):
     __tablename__ = 'authors'
     
-    id = Column(Integer, primary_key=True)
-    telegram_id = Column(BigInteger, unique=True, nullable=True)
-    username = Column(String, nullable=True)
-    display_name = Column(String, nullable=True, default='аноним')
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    telegram_id = Column(BigInteger, unique=True, nullable=False)
+    username = Column(String)
+    display_name = Column(String)
     
     reviews = relationship("Review", back_populates="author")
 

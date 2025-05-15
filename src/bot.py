@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 import logging
 import os
 import atexit
+import time
 
 # Настройка логирования
 logging.basicConfig(
@@ -61,7 +62,12 @@ class ReviewStates(StatesGroup):
 class ReviewBot:
     def __init__(self, token: str, admin_id: int, db_session):
         self.state_storage = StateMemoryStorage()
-        self.bot = telebot.TeleBot(token, state_storage=self.state_storage)
+        self.bot = telebot.TeleBot(
+            token,
+            state_storage=self.state_storage,
+            parse_mode=None,
+            threaded=True
+        )
         self.admin_id = admin_id
         self.db = db_session
         self.current_selection: Dict[int, dict] = {}  # Store current user selections
@@ -269,7 +275,7 @@ class ReviewBot:
 
     def check_message_duplicate(self, message):
         """Проверяет, не было ли это сообщение уже переслано ранее"""
-        return False  # Временно отключаем проверку дубликатов
+        return False  # Всегда возвращаем False, чтобы сохранять все сообщения
 
     def buffer_review(self, message):
         """Add message to buffer for batch processing"""
@@ -396,7 +402,6 @@ class ReviewBot:
         try:
             saved_count = 0
             errors_count = 0
-            skipped_count = 0  # Счетчик пропущенных дубликатов
             authors_cache = {}  # Кэш для авторов
             media_saved = 0
 
@@ -406,12 +411,6 @@ class ReviewBot:
                     logger.info(f"\nProcessing message {idx}/{buffer_size}")
                     logger.info(f"Category: {item['category']}, Item: {item['item']}")
                     logger.info(f"Message type: {msg.content_type}")
-                    
-                    # Проверяем на дубликаты
-                    if self.check_exact_duplicate(msg, item['category'], item['item']):
-                        logger.info(f"Skipping duplicate message {idx}")
-                        skipped_count += 1
-                        continue
                     
                     # Получаем или создаем автора из кэша
                     author_id = msg.forward_from.id
@@ -547,8 +546,7 @@ class ReviewBot:
                 f"Всего сообщений: {buffer_size}\n"
                 f"Успешно сохранено: {saved_count}\n"
                 f"Медиафайлов сохранено: {media_saved}\n"
-                f"Ошибок: {errors_count}\n"
-                f"Пропущено дубликатов: {skipped_count}"
+                f"Ошибок: {errors_count}"
             )
             
             self.bot.reply_to(message, status_msg)
@@ -593,34 +591,19 @@ class ReviewBot:
             "/help - показать эту справку"
         )
 
-    def check_exact_duplicate(self, message, category, item):
-        """Проверяет наличие идентичного отзыва в базе"""
-        try:
-            # Получаем текст отзыва
-            review_text = message.text if message.text else message.caption
-            if not review_text:
-                return False
-
-            # Ищем точно такой же отзыв с тем же автором
-            existing = self.db.query(Review)\
-                .join(Author)\
-                .filter(
-                    Review.text == review_text,
-                    Review.category == category,
-                    Review.reference_name == item,
-                    Author.telegram_id == message.forward_from.id
-                )\
-                .first()
-
-            return existing is not None
-
-        except Exception as e:
-            logger.error(f"Ошибка при проверке дубликатов: {str(e)}", exc_info=True)
-            return False
-
     def run(self):
-        try:
-            logger.info("Starting bot polling...")
-            self.bot.polling()
-        finally:
-            cleanup_lock() 
+        while True:
+            try:
+                logger.info("Starting bot polling...")
+                self.bot.polling(
+                    non_stop=True,
+                    interval=3,
+                    timeout=30
+                )
+            except Exception as e:
+                logger.error(f"Ошибка при работе бота: {str(e)}", exc_info=True)
+                logger.info("Перезапуск через 10 секунд...")
+                time.sleep(10)
+                continue
+            finally:
+                cleanup_lock() 
