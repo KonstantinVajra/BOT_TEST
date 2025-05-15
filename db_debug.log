@@ -1,0 +1,916 @@
+2025-05-15 17:36:43,639 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 17:41:00,317 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 17:41:00,317 - src.bot - INFO - Starting bot polling...
+2025-05-15 17:43:08,410 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 17:43:08,410 - src.bot - ERROR - Another bot instance is already running!
+2025-05-15 17:43:08,410 - src.bot - ERROR - Bot instance already running. Exiting.
+2025-05-15 17:49:25,420 - __main__ - INFO - Testing database connection and inserts...
+2025-05-15 17:49:26,440 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-05-15 17:49:26,440 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:49:26,638 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-05-15 17:49:26,638 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:49:26,837 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-05-15 17:49:26,838 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:49:27,337 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-15 17:49:27,338 - sqlalchemy.engine.Engine - INFO - INSERT INTO authors (telegram_id, username, display_name) VALUES (%(telegram_id)s, %(username)s, %(display_name)s) RETURNING authors.id
+2025-05-15 17:49:27,338 - sqlalchemy.engine.Engine - INFO - [generated in 0.00047s] {'telegram_id': 123456789, 'username': 'test_user', 'display_name': 'Test User'}
+2025-05-15 17:49:27,854 - src.models - INFO - Создан новый автор: Test User (id: 123456789)
+2025-05-15 17:49:27,854 - __main__ - INFO - Created test author with ID: 1
+2025-05-15 17:49:27,856 - sqlalchemy.engine.Engine - INFO - INSERT INTO reviews (text, category, reference_name, author_id, timestamp, embedding) VALUES (%(text)s, %(category)s, %(reference_name)s, %(author_id)s, %(timestamp)s, %(embedding)s) RETURNING reviews.id
+2025-05-15 17:49:27,856 - sqlalchemy.engine.Engine - INFO - [generated in 0.00067s] {'text': 'Это тестовый отзыв', 'category': 'отель', 'reference_name': 'Test Hotel', 'author_id': 1, 'timestamp': datetime.datetime(2025, 5, 15, 17, 49, 27, 855366), 'embedding': None}
+2025-05-15 17:49:27,959 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Test Hotel'
+2025-05-15 17:49:27,960 - __main__ - INFO - Created test review with ID: 1
+2025-05-15 17:49:27,961 - sqlalchemy.engine.Engine - INFO - INSERT INTO media (review_id, file_type, file_id, context_text, embedding) VALUES (%(review_id)s, %(file_type)s, %(file_id)s, %(context_text)s, %(embedding)s) RETURNING media.id
+2025-05-15 17:49:27,961 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] {'review_id': 1, 'file_type': 'photo', 'file_id': 'test_file_id', 'context_text': 'Test media description', 'embedding': None}
+2025-05-15 17:49:28,061 - src.models - INFO - Создан новый медиафайл: photo для отзыва #1
+2025-05-15 17:49:28,062 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-15 17:49:28,161 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 17:49:28,161 - __main__ - INFO - Successfully committed all test data
+2025-05-15 17:49:28,162 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-15 17:49:28,165 - sqlalchemy.engine.Engine - INFO - SELECT authors.id AS authors_id, authors.telegram_id AS authors_telegram_id, authors.username AS authors_username, authors.display_name AS authors_display_name 
+FROM authors 
+WHERE authors.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2025-05-15 17:49:28,166 - sqlalchemy.engine.Engine - INFO - [generated in 0.00151s] {'telegram_id_1': 123456789, 'param_1': 1}
+2025-05-15 17:49:28,365 - sqlalchemy.engine.Engine - INFO - SELECT reviews.id AS reviews_id, reviews.text AS reviews_text, reviews.category AS reviews_category, reviews.reference_name AS reviews_reference_name, reviews.author_id AS reviews_author_id, reviews.timestamp AS reviews_timestamp, reviews.embedding AS reviews_embedding 
+FROM reviews 
+WHERE reviews.author_id = %(author_id_1)s 
+ LIMIT %(param_1)s
+2025-05-15 17:49:28,366 - sqlalchemy.engine.Engine - INFO - [generated in 0.00159s] {'author_id_1': 1, 'param_1': 1}
+2025-05-15 17:49:28,468 - sqlalchemy.engine.Engine - INFO - SELECT media.id AS media_id, media.review_id AS media_review_id, media.file_type AS media_file_type, media.file_id AS media_file_id, media.context_text AS media_context_text, media.embedding AS media_embedding 
+FROM media 
+WHERE media.review_id = %(review_id_1)s 
+ LIMIT %(param_1)s
+2025-05-15 17:49:28,469 - sqlalchemy.engine.Engine - INFO - [generated in 0.00094s] {'review_id_1': 1, 'param_1': 1}
+2025-05-15 17:49:28,568 - __main__ - INFO - Verification of saved data:
+2025-05-15 17:49:28,569 - __main__ - INFO - Author: Test User (ID: 1)
+2025-05-15 17:49:28,569 - __main__ - INFO - Review: Это тестовый отзыв... (ID: 1)
+2025-05-15 17:49:28,569 - __main__ - INFO - Media: photo (ID: 1)
+2025-05-15 17:49:28,569 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-15 17:50:49,181 - __main__ - INFO - Testing database connection and inserts...
+2025-05-15 17:50:50,161 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-05-15 17:50:50,161 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:50:50,351 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-05-15 17:50:50,352 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:50:50,541 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-05-15 17:50:50,542 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:50:50,730 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-15 17:50:50,730 - sqlalchemy.engine.Engine - INFO - INSERT INTO authors (telegram_id, username, display_name) VALUES (%(telegram_id)s, %(username)s, %(display_name)s) RETURNING authors.id
+2025-05-15 17:50:50,731 - sqlalchemy.engine.Engine - INFO - [generated in 0.00049s] {'telegram_id': 123456789, 'username': 'test_user', 'display_name': 'Test User'}
+2025-05-15 17:50:50,922 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-15 17:50:51,018 - src.models - ERROR - Произошел откат транзакции
+2025-05-15 17:50:51,019 - __main__ - ERROR - Error during database operations: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "authors_telegram_id_key"
+DETAIL:  Key (telegram_id)=(123456789) already exists.
+
+[SQL: INSERT INTO authors (telegram_id, username, display_name) VALUES (%(telegram_id)s, %(username)s, %(display_name)s) RETURNING authors.id]
+[parameters: {'telegram_id': 123456789, 'username': 'test_user', 'display_name': 'Test User'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "authors_telegram_id_key"
+DETAIL:  Key (telegram_id)=(123456789) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Arhiv\Bot_test\test_db_insert.py", line 40, in test_database_insert
+    session.flush()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4312, in flush
+    self._flush(objects)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4447, in _flush
+    with util.safe_reraise():
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4408, in _flush
+    flush_context.execute()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "authors_telegram_id_key"
+DETAIL:  Key (telegram_id)=(123456789) already exists.
+
+[SQL: INSERT INTO authors (telegram_id, username, display_name) VALUES (%(telegram_id)s, %(username)s, %(display_name)s) RETURNING authors.id]
+[parameters: {'telegram_id': 123456789, 'username': 'test_user', 'display_name': 'Test User'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-15 17:50:51,029 - __main__ - ERROR - Database connection error: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "authors_telegram_id_key"
+DETAIL:  Key (telegram_id)=(123456789) already exists.
+
+[SQL: INSERT INTO authors (telegram_id, username, display_name) VALUES (%(telegram_id)s, %(username)s, %(display_name)s) RETURNING authors.id]
+[parameters: {'telegram_id': 123456789, 'username': 'test_user', 'display_name': 'Test User'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "authors_telegram_id_key"
+DETAIL:  Key (telegram_id)=(123456789) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Arhiv\Bot_test\test_db_insert.py", line 40, in test_database_insert
+    session.flush()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4312, in flush
+    self._flush(objects)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4447, in _flush
+    with util.safe_reraise():
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4408, in _flush
+    flush_context.execute()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "authors_telegram_id_key"
+DETAIL:  Key (telegram_id)=(123456789) already exists.
+
+[SQL: INSERT INTO authors (telegram_id, username, display_name) VALUES (%(telegram_id)s, %(username)s, %(display_name)s) RETURNING authors.id]
+[parameters: {'telegram_id': 123456789, 'username': 'test_user', 'display_name': 'Test User'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-05-15 17:51:26,576 - __main__ - INFO - Testing database connection and inserts...
+2025-05-15 17:51:27,582 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-05-15 17:51:27,582 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:51:27,785 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-05-15 17:51:27,786 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:51:27,981 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-05-15 17:51:27,982 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-05-15 17:51:28,178 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-15 17:51:28,194 - sqlalchemy.engine.Engine - INFO - SELECT authors.id AS authors_id, authors.telegram_id AS authors_telegram_id, authors.username AS authors_username, authors.display_name AS authors_display_name 
+FROM authors 
+WHERE authors.telegram_id = %(telegram_id_1)s 
+ LIMIT %(param_1)s
+2025-05-15 17:51:28,195 - sqlalchemy.engine.Engine - INFO - [generated in 0.00075s] {'telegram_id_1': 89460866, 'param_1': 1}
+2025-05-15 17:51:28,393 - sqlalchemy.engine.Engine - INFO - INSERT INTO authors (telegram_id, username, display_name) VALUES (%(telegram_id)s, %(username)s, %(display_name)s) RETURNING authors.id
+2025-05-15 17:51:28,393 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] {'telegram_id': 89460866, 'username': 'test_user_89460866', 'display_name': 'Test User 89460866'}
+2025-05-15 17:51:28,492 - src.models - INFO - Создан новый автор: Test User 89460866 (id: 89460866)
+2025-05-15 17:51:28,492 - __main__ - INFO - Created new test author with ID: 3
+2025-05-15 17:51:28,494 - sqlalchemy.engine.Engine - INFO - INSERT INTO reviews (text, category, reference_name, author_id, timestamp, embedding) VALUES (%(text)s, %(category)s, %(reference_name)s, %(author_id)s, %(timestamp)s, %(embedding)s) RETURNING reviews.id
+2025-05-15 17:51:28,494 - sqlalchemy.engine.Engine - INFO - [generated in 0.00045s] {'text': 'Это тестовый отзыв 2025-05-15 17:51:28.493424', 'category': 'отель', 'reference_name': 'Test Hotel', 'author_id': 3, 'timestamp': datetime.datetime(2025, 5, 15, 17, 51, 28, 493424), 'embedding': None}
+2025-05-15 17:51:28,594 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Test Hotel'
+2025-05-15 17:51:28,595 - __main__ - INFO - Created test review with ID: 2
+2025-05-15 17:51:28,596 - sqlalchemy.engine.Engine - INFO - INSERT INTO media (review_id, file_type, file_id, context_text, embedding) VALUES (%(review_id)s, %(file_type)s, %(file_id)s, %(context_text)s, %(embedding)s) RETURNING media.id
+2025-05-15 17:51:28,596 - sqlalchemy.engine.Engine - INFO - [generated in 0.00039s] {'review_id': 2, 'file_type': 'photo', 'file_id': 'test_file_id_1747320688.595161', 'context_text': 'Test media description', 'embedding': None}
+2025-05-15 17:51:28,695 - src.models - INFO - Создан новый медиафайл: photo для отзыва #2
+2025-05-15 17:51:28,695 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-15 17:51:28,794 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 17:51:28,795 - __main__ - INFO - Successfully committed all test data
+2025-05-15 17:51:28,795 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-15 17:51:28,796 - sqlalchemy.engine.Engine - INFO - SELECT reviews.id AS reviews_id, reviews.text AS reviews_text, reviews.category AS reviews_category, reviews.reference_name AS reviews_reference_name, reviews.author_id AS reviews_author_id, reviews.timestamp AS reviews_timestamp, reviews.embedding AS reviews_embedding 
+FROM reviews 
+WHERE reviews.id = %(pk_1)s
+2025-05-15 17:51:28,797 - sqlalchemy.engine.Engine - INFO - [generated in 0.00066s] {'pk_1': 2}
+2025-05-15 17:51:28,994 - sqlalchemy.engine.Engine - INFO - SELECT reviews.id AS reviews_id, reviews.text AS reviews_text, reviews.category AS reviews_category, reviews.reference_name AS reviews_reference_name, reviews.author_id AS reviews_author_id, reviews.timestamp AS reviews_timestamp, reviews.embedding AS reviews_embedding 
+FROM reviews 
+WHERE reviews.id = %(id_1)s 
+ LIMIT %(param_1)s
+2025-05-15 17:51:28,994 - sqlalchemy.engine.Engine - INFO - [generated in 0.00093s] {'id_1': 2, 'param_1': 1}
+2025-05-15 17:51:29,093 - sqlalchemy.engine.Engine - INFO - SELECT media.id AS media_id, media.review_id AS media_review_id, media.file_type AS media_file_type, media.file_id AS media_file_id, media.context_text AS media_context_text, media.embedding AS media_embedding 
+FROM media 
+WHERE media.review_id = %(review_id_1)s 
+ LIMIT %(param_1)s
+2025-05-15 17:51:29,094 - sqlalchemy.engine.Engine - INFO - [generated in 0.00088s] {'review_id_1': 2, 'param_1': 1}
+2025-05-15 17:51:29,193 - __main__ - INFO - Verification of saved data:
+2025-05-15 17:51:29,194 - sqlalchemy.engine.Engine - INFO - SELECT authors.id AS authors_id, authors.telegram_id AS authors_telegram_id, authors.username AS authors_username, authors.display_name AS authors_display_name 
+FROM authors 
+WHERE authors.id = %(pk_1)s
+2025-05-15 17:51:29,194 - sqlalchemy.engine.Engine - INFO - [generated in 0.00049s] {'pk_1': 3}
+2025-05-15 17:51:29,291 - __main__ - INFO - Author: Test User 89460866 (ID: 3)
+2025-05-15 17:51:29,292 - __main__ - INFO - Review: Это тестовый отзыв 2025-05-15 ... (ID: 2)
+2025-05-15 17:51:29,292 - __main__ - INFO - Media: photo (ID: 2)
+2025-05-15 17:51:29,292 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-05-15 17:52:47,755 - __main__ - INFO - Testing database connection and inserts...
+2025-05-15 17:52:49,649 - src.models - INFO - Создан новый автор: Test User 71702492 (id: 71702492)
+2025-05-15 17:52:49,649 - __main__ - INFO - Created new test author with ID: 4
+2025-05-15 17:52:49,751 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Test Hotel'
+2025-05-15 17:52:49,751 - __main__ - INFO - Created test review with ID: 3
+2025-05-15 17:52:49,853 - src.models - INFO - Создан новый медиафайл: photo для отзыва #3
+2025-05-15 17:52:49,952 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 17:52:49,952 - __main__ - INFO - Successfully committed all test data
+2025-05-15 17:52:50,349 - __main__ - INFO - Verification of saved data:
+2025-05-15 17:52:50,448 - __main__ - INFO - Author: Test User 71702492 (ID: 4)
+2025-05-15 17:52:50,450 - __main__ - INFO - Review: Это тестовый отзыв 2025-05-15 ... (ID: 3)
+2025-05-15 17:52:50,450 - __main__ - INFO - Media: photo (ID: 3)
+2025-05-15 17:53:41,541 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 17:53:41,547 - src.bot - INFO - Starting bot polling...
+2025-05-15 18:00:22,407 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 18:00:22,407 - src.bot - ERROR - Another bot instance is already running!
+2025-05-15 18:00:22,407 - src.bot - ERROR - Bot instance already running. Exiting.
+2025-05-15 18:01:34,161 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 18:01:34,162 - src.bot - INFO - Starting bot polling...
+2025-05-15 18:01:57,578 - src.bot - INFO - === START REVIEW HANDLING ===
+2025-05-15 18:01:57,578 - src.bot - INFO - === START REVIEW HANDLING ===
+2025-05-15 18:01:57,579 - src.bot - INFO - Message from user: 800794195
+2025-05-15 18:01:57,580 - src.bot - INFO - Message from user: 800794195
+2025-05-15 18:01:57,580 - src.bot - INFO - Message type: text
+2025-05-15 18:01:57,580 - src.bot - INFO - Message type: text
+2025-05-15 18:01:57,581 - src.bot - INFO - Message text: Аренас дорадос у нас. Пока сложно сказать. Мы второй день здесь. Еда норм, ожидали худшего. Номер на
+2025-05-15 18:01:57,581 - src.bot - INFO - Message text: Всем привет! Есть кто летит или уже там? Взяли тур. Хотелось бы новостей с места.
+2025-05-15 18:01:57,582 - src.bot - INFO - Forwarded from: 760404226 (Svеtlana190)
+2025-05-15 18:01:57,582 - src.bot - INFO - Forwarded from: 1716264200 (DiDi)
+2025-05-15 18:01:57,582 - src.bot - INFO - Processing review for отель - Arenas Doradas
+2025-05-15 18:01:57,582 - src.bot - INFO - Processing review for отель - Arenas Doradas
+2025-05-15 18:01:57,822 - src.bot - INFO - Creating new author: Svеtlana190
+2025-05-15 18:01:57,823 - src.bot - INFO - Creating new author: DiDi
+2025-05-15 18:01:57,825 - src.bot - ERROR - Database error: Session is already flushing
+Traceback (most recent call last):
+  File "D:\Arhiv\Bot_test\src\bot.py", line 294, in handle_review
+    self.db.flush()  # Flush to get the author ID
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4306, in flush
+    raise sa_exc.InvalidRequestError("Session is already flushing")
+sqlalchemy.exc.InvalidRequestError: Session is already flushing
+2025-05-15 18:01:58,019 - src.models - ERROR - Произошел откат транзакции
+2025-05-15 18:01:58,019 - src.bot - ERROR - Database error: Method 'rollback()' can't be called here; method 'rollback()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4408, in _flush
+    flush_context.execute()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 679, in execute
+    util.preloaded.orm_persistence.delete_obj(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 174, in delete_obj
+    states_to_delete = list(
+                       ^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 309, in _organize_states_for_delete
+    for state, dict_, mapper, connection in _connections_for_states(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1726, in _connections_for_states
+    connection = uowtransaction.transaction.connection(base_mapper)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in connection
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 938, in _raise_for_prerequisite_state
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: This session is in 'inactive' state, due to the SQL transaction being rolled back; no further SQL can be emitted within this transaction.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Arhiv\Bot_test\src\bot.py", line 294, in handle_review
+    self.db.flush()  # Flush to get the author ID
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4312, in flush
+    self._flush(objects)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4447, in _flush
+    with util.safe_reraise():
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 150, in __exit__
+    raise value.with_traceback(traceback)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "<string>", line 2, in rollback
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 121, in _go
+    raise sa_exc.IllegalStateChangeError(
+sqlalchemy.exc.IllegalStateChangeError: Method 'rollback()' can't be called here; method 'rollback()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)
+2025-05-15 18:01:58,111 - src.bot - ERROR - General error in review handling: Session is already flushing
+Traceback (most recent call last):
+  File "D:\Arhiv\Bot_test\src\bot.py", line 294, in handle_review
+    self.db.flush()  # Flush to get the author ID
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4306, in flush
+    raise sa_exc.InvalidRequestError("Session is already flushing")
+sqlalchemy.exc.InvalidRequestError: Session is already flushing
+2025-05-15 18:01:58,138 - src.bot - ERROR - General error in review handling: Method 'rollback()' can't be called here; method 'rollback()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4408, in _flush
+    flush_context.execute()
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 679, in execute
+    util.preloaded.orm_persistence.delete_obj(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 174, in delete_obj
+    states_to_delete = list(
+                       ^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 309, in _organize_states_for_delete
+    for state, dict_, mapper, connection in _connections_for_states(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1726, in _connections_for_states
+    connection = uowtransaction.transaction.connection(base_mapper)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in connection
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 938, in _raise_for_prerequisite_state
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: This session is in 'inactive' state, due to the SQL transaction being rolled back; no further SQL can be emitted within this transaction.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Arhiv\Bot_test\src\bot.py", line 294, in handle_review
+    self.db.flush()  # Flush to get the author ID
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4312, in flush
+    self._flush(objects)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4447, in _flush
+    with util.safe_reraise():
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 150, in __exit__
+    raise value.with_traceback(traceback)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4448, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "<string>", line 2, in rollback
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 121, in _go
+    raise sa_exc.IllegalStateChangeError(
+sqlalchemy.exc.IllegalStateChangeError: Method 'rollback()' can't be called here; method 'rollback()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)
+2025-05-15 18:01:58,198 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:01:58,199 - src.bot - INFO - Message type: text
+2025-05-15 18:01:58,199 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:01:58,200 - src.bot - INFO - Message type: text
+2025-05-15 18:01:58,200 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:01:58,200 - src.bot - INFO - Message type: photo
+2025-05-15 18:29:02,148 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 18:29:02,149 - src.bot - INFO - Starting bot polling...
+2025-05-15 18:29:29,249 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,249 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,250 - src.bot - INFO - Message type: text
+2025-05-15 18:29:29,250 - src.bot - INFO - Message type: text
+2025-05-15 18:29:29,250 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,250 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,251 - src.bot - INFO - Message type: photo
+2025-05-15 18:29:29,251 - src.bot - INFO - Message type: video
+2025-05-15 18:29:29,251 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,251 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,251 - src.bot - INFO - Message type: video
+2025-05-15 18:29:29,251 - src.bot - INFO - Message type: text
+2025-05-15 18:29:29,251 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,252 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,252 - src.bot - INFO - Message type: photo
+2025-05-15 18:29:29,252 - src.bot - INFO - Message type: text
+2025-05-15 18:29:29,253 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,253 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:29:29,253 - src.bot - INFO - Message type: text
+2025-05-15 18:29:29,253 - src.bot - INFO - Message type: text
+2025-05-15 18:31:48,668 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 18:31:48,670 - src.bot - INFO - Starting bot polling...
+2025-05-15 18:32:28,688 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,688 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,688 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,689 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,689 - src.bot - INFO - Text content: Аренас дорадос у нас. Пока сложно сказать. Мы второй день здесь. Еда норм, ожидали худшего. Номер на
+2025-05-15 18:32:28,690 - src.bot - INFO - Text content: Всем привет! Есть кто летит или уже там? Взяли тур. Хотелось бы новостей с места.
+2025-05-15 18:32:28,690 - src.bot - INFO - Forwarded from: 760404226 (Svеtlana190)
+2025-05-15 18:32:28,690 - src.bot - INFO - Forwarded from: 1716264200 (DiDi)
+2025-05-15 18:32:28,692 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,692 - src.bot - INFO - Current buffer size: 1
+2025-05-15 18:32:28,692 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,693 - src.bot - INFO - Current buffer size: 2
+2025-05-15 18:32:28,694 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,694 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,694 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,694 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,694 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,695 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,695 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,695 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,695 - src.bot - INFO - Message type: photo
+2025-05-15 18:32:28,696 - src.bot - INFO - Message type: video
+2025-05-15 18:32:28,696 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,696 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,696 - src.bot - INFO - Message type: video
+2025-05-15 18:32:28,696 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,697 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,697 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,697 - src.bot - INFO - Message type: photo
+2025-05-15 18:32:28,697 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,697 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,698 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,698 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,698 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,699 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,699 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,700 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,700 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,700 - src.bot - INFO - Text content: Ольга, подскажите, пожалуйста, вы экскурсии брали? Если да, то кого посоветуете?
+2025-05-15 18:32:28,700 - src.bot - INFO - Text content: И ещё, комары в номере/ на территории есть?
+2025-05-15 18:32:28,701 - src.bot - INFO - Forwarded from: 476623979 (Алина)
+2025-05-15 18:32:28,701 - src.bot - INFO - Forwarded from: 476623979 (Алина)
+2025-05-15 18:32:28,701 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,701 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,701 - src.bot - INFO - Current buffer size: 3
+2025-05-15 18:32:28,701 - src.bot - INFO - Current buffer size: 4
+2025-05-15 18:32:28,701 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,701 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,701 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,702 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,702 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,702 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,702 - src.bot - INFO - Text content: И про розетки уточните пожалуйста. Нужны к нашим вилкам какие-либо адаптеры?
+2025-05-15 18:32:28,702 - src.bot - INFO - Text content: Согласен,были с 5.06 на 10 дней.все хорошо,еда не разнообразная,но голодными не были,океан отличный,
+2025-05-15 18:32:28,702 - src.bot - INFO - Forwarded from: 1716264200 (DiDi)
+2025-05-15 18:32:28,703 - src.bot - INFO - Forwarded from: 6133519408 (Сергей)
+2025-05-15 18:32:28,703 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,703 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,703 - src.bot - INFO - Current buffer size: 5
+2025-05-15 18:32:28,703 - src.bot - INFO - Current buffer size: 6
+2025-05-15 18:32:28,703 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,703 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,704 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,704 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,704 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,704 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,704 - src.bot - INFO - Text content: А мы были в ноябре. Нам все очень понравилось. Отель не для олигархов, но вполне приличный. Осталось
+2025-05-15 18:32:28,704 - src.bot - INFO - Text content: Всем здравствуйте! Сегодня в отель заселилась, не ожидала, что столько тут Комаров, прям в номере. М
+2025-05-15 18:32:28,705 - src.bot - INFO - Forwarded from: 144993410 (Настя)
+2025-05-15 18:32:28,705 - src.bot - INFO - Forwarded from: 988438861 (Maria)
+2025-05-15 18:32:28,705 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,705 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,705 - src.bot - INFO - Current buffer size: 7
+2025-05-15 18:32:28,705 - src.bot - INFO - Current buffer size: 8
+2025-05-15 18:32:28,705 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,706 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:28,706 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:32:28,706 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,706 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,706 - src.bot - INFO - Message type: text
+2025-05-15 18:32:28,706 - src.bot - INFO - Text content: Ого.. Была апрель - май    ни одного не встретила
+2025-05-15 18:32:28,708 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:32:28,709 - src.bot - INFO - Forwarded from: 583008489 (Анна)
+2025-05-15 18:32:28,709 - src.bot - INFO - Message type: photo
+2025-05-15 18:32:28,709 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:32:28,710 - src.bot - INFO - Current buffer size: 9
+2025-05-15 18:32:28,710 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:32:32,561 - src.bot - INFO - === START SAVING BUFFER ===
+2025-05-15 18:32:32,562 - src.bot - INFO - Starting to save 9 messages
+2025-05-15 18:32:32,562 - src.bot - INFO - 
+Processing message 1/9
+2025-05-15 18:32:32,562 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:32,562 - src.bot - INFO - Looking up author 760404226
+2025-05-15 18:32:32,669 - src.bot - INFO - Creating new author: Svеtlana190
+2025-05-15 18:32:32,769 - src.models - INFO - Создан новый автор: Svеtlana190 (id: 760404226)
+2025-05-15 18:32:32,867 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:33,062 - src.bot - INFO - Created author with ID: 6
+2025-05-15 18:32:33,063 - src.bot - INFO - Creating review. Text preview: Аренас дорадос у нас. Пока сложно сказать. Мы втор
+2025-05-15 18:32:33,163 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:33,263 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:33,459 - src.bot - INFO - Created review with ID: 4
+2025-05-15 18:32:33,460 - src.bot - INFO - 
+Processing message 2/9
+2025-05-15 18:32:33,460 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:33,460 - src.bot - INFO - Looking up author 1716264200
+2025-05-15 18:32:33,558 - src.bot - INFO - Creating new author: DiDi
+2025-05-15 18:32:33,656 - src.models - INFO - Создан новый автор: DiDi (id: 1716264200)
+2025-05-15 18:32:33,754 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:33,949 - src.bot - INFO - Created author with ID: 7
+2025-05-15 18:32:33,949 - src.bot - INFO - Creating review. Text preview: Всем привет! Есть кто летит или уже там? Взяли тур
+2025-05-15 18:32:34,048 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:34,146 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:34,340 - src.bot - INFO - Created review with ID: 5
+2025-05-15 18:32:34,341 - src.bot - INFO - 
+Processing message 3/9
+2025-05-15 18:32:34,341 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:34,341 - src.bot - INFO - Looking up author 476623979
+2025-05-15 18:32:34,438 - src.bot - INFO - Creating new author: Алина
+2025-05-15 18:32:34,536 - src.models - INFO - Создан новый автор: Алина (id: 476623979)
+2025-05-15 18:32:34,634 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:34,829 - src.bot - INFO - Created author with ID: 8
+2025-05-15 18:32:34,829 - src.bot - INFO - Creating review. Text preview: Ольга, подскажите, пожалуйста, вы экскурсии брали?
+2025-05-15 18:32:34,928 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:35,029 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:35,224 - src.bot - INFO - Created review with ID: 6
+2025-05-15 18:32:35,224 - src.bot - INFO - 
+Processing message 4/9
+2025-05-15 18:32:35,224 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:35,225 - src.bot - INFO - Creating review. Text preview: И ещё, комары в номере/ на территории есть?
+2025-05-15 18:32:35,421 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:35,519 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:35,715 - src.bot - INFO - Created review with ID: 7
+2025-05-15 18:32:35,715 - src.bot - INFO - 
+Processing message 5/9
+2025-05-15 18:32:35,715 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:35,716 - src.bot - INFO - Creating review. Text preview: И про розетки уточните пожалуйста. Нужны к нашим в
+2025-05-15 18:32:35,915 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:36,014 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:36,210 - src.bot - INFO - Created review with ID: 8
+2025-05-15 18:32:36,210 - src.bot - INFO - 
+Processing message 6/9
+2025-05-15 18:32:36,210 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:36,211 - src.bot - INFO - Looking up author 6133519408
+2025-05-15 18:32:36,309 - src.bot - INFO - Creating new author: Сергей
+2025-05-15 18:32:36,410 - src.models - INFO - Создан новый автор: Сергей (id: 6133519408)
+2025-05-15 18:32:36,507 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:36,702 - src.bot - INFO - Created author with ID: 9
+2025-05-15 18:32:36,702 - src.bot - INFO - Creating review. Text preview: Согласен,были с 5.06 на 10 дней.все хорошо,еда не 
+2025-05-15 18:32:36,802 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:36,900 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:37,096 - src.bot - INFO - Created review with ID: 9
+2025-05-15 18:32:37,097 - src.bot - INFO - 
+Processing message 7/9
+2025-05-15 18:32:37,098 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:37,098 - src.bot - INFO - Looking up author 144993410
+2025-05-15 18:32:37,195 - src.bot - INFO - Creating new author: Настя
+2025-05-15 18:32:37,294 - src.models - INFO - Создан новый автор: Настя (id: 144993410)
+2025-05-15 18:32:37,392 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:37,590 - src.bot - INFO - Created author with ID: 10
+2025-05-15 18:32:37,591 - src.bot - INFO - Creating review. Text preview: А мы были в ноябре. Нам все очень понравилось. Оте
+2025-05-15 18:32:37,689 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:37,787 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:37,983 - src.bot - INFO - Created review with ID: 10
+2025-05-15 18:32:37,983 - src.bot - INFO - 
+Processing message 8/9
+2025-05-15 18:32:37,983 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:37,983 - src.bot - INFO - Looking up author 988438861
+2025-05-15 18:32:38,081 - src.bot - INFO - Creating new author: Maria
+2025-05-15 18:32:38,179 - src.models - INFO - Создан новый автор: Maria (id: 988438861)
+2025-05-15 18:32:38,278 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:38,472 - src.bot - INFO - Created author with ID: 11
+2025-05-15 18:32:38,473 - src.bot - INFO - Creating review. Text preview: Всем здравствуйте! Сегодня в отель заселилась, не 
+2025-05-15 18:32:38,571 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:38,669 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:38,867 - src.bot - INFO - Created review with ID: 11
+2025-05-15 18:32:38,867 - src.bot - INFO - 
+Processing message 9/9
+2025-05-15 18:32:38,867 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:32:38,867 - src.bot - INFO - Looking up author 583008489
+2025-05-15 18:32:38,965 - src.bot - INFO - Creating new author: Анна
+2025-05-15 18:32:39,064 - src.models - INFO - Создан новый автор: Анна (id: 583008489)
+2025-05-15 18:32:39,162 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:39,356 - src.bot - INFO - Created author with ID: 12
+2025-05-15 18:32:39,357 - src.bot - INFO - Creating review. Text preview: Ого.. Была апрель - май    ни одного не встретила
+2025-05-15 18:32:39,455 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:32:39,553 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:32:39,748 - src.bot - INFO - Created review with ID: 12
+2025-05-15 18:32:39,880 - src.bot - INFO - === END SAVING BUFFER ===
+
+2025-05-15 18:36:38,455 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 18:36:38,456 - src.bot - INFO - Starting bot polling...
+2025-05-15 18:37:19,770 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,770 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,770 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,771 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,771 - src.bot - INFO - Text content: Аренас дорадос у нас. Пока сложно сказать. Мы второй день здесь. Еда норм, ожидали худшего. Номер на
+2025-05-15 18:37:19,771 - src.bot - INFO - Text content: Всем привет! Есть кто летит или уже там? Взяли тур. Хотелось бы новостей с места.
+2025-05-15 18:37:19,771 - src.bot - INFO - Forwarded from: 760404226 (Svеtlana190)
+2025-05-15 18:37:19,772 - src.bot - INFO - Forwarded from: 1716264200 (DiDi)
+2025-05-15 18:37:19,772 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,772 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,772 - src.bot - INFO - Current buffer size: 1
+2025-05-15 18:37:19,772 - src.bot - INFO - Current buffer size: 2
+2025-05-15 18:37:19,772 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,772 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,773 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,773 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,773 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,773 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,773 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,774 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,774 - src.bot - INFO - Message type: photo
+2025-05-15 18:37:19,774 - src.bot - INFO - Message type: video
+2025-05-15 18:37:19,774 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,774 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,774 - src.bot - INFO - Message type: video
+2025-05-15 18:37:19,775 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,775 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,775 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,775 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,776 - src.bot - INFO - Message type: photo
+2025-05-15 18:37:19,776 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,777 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,777 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,777 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,777 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,777 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,777 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,778 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,778 - src.bot - INFO - Text content: Ольга, подскажите, пожалуйста, вы экскурсии брали? Если да, то кого посоветуете?
+2025-05-15 18:37:19,778 - src.bot - INFO - Text content: И ещё, комары в номере/ на территории есть?
+2025-05-15 18:37:19,778 - src.bot - INFO - Forwarded from: 476623979 (Алина)
+2025-05-15 18:37:19,779 - src.bot - INFO - Forwarded from: 476623979 (Алина)
+2025-05-15 18:37:19,779 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,779 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,780 - src.bot - INFO - Current buffer size: 3
+2025-05-15 18:37:19,780 - src.bot - INFO - Current buffer size: 4
+2025-05-15 18:37:19,780 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,780 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,780 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,781 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,781 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,781 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,781 - src.bot - INFO - Text content: И про розетки уточните пожалуйста. Нужны к нашим вилкам какие-либо адаптеры?
+2025-05-15 18:37:19,781 - src.bot - INFO - Text content: Согласен,были с 5.06 на 10 дней.все хорошо,еда не разнообразная,но голодными не были,океан отличный,
+2025-05-15 18:37:19,781 - src.bot - INFO - Forwarded from: 1716264200 (DiDi)
+2025-05-15 18:37:19,781 - src.bot - INFO - Forwarded from: 6133519408 (Сергей)
+2025-05-15 18:37:19,782 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,782 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,782 - src.bot - INFO - Current buffer size: 5
+2025-05-15 18:37:19,782 - src.bot - INFO - Current buffer size: 6
+2025-05-15 18:37:19,782 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,783 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,784 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,784 - src.bot - INFO - Text content: А мы были в ноябре. Нам все очень понравилось. Отель не для олигархов, но вполне приличный. Осталось
+2025-05-15 18:37:19,784 - src.bot - INFO - Forwarded from: 144993410 (Настя)
+2025-05-15 18:37:19,784 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,784 - src.bot - INFO - Current buffer size: 7
+2025-05-15 18:37:19,784 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,784 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,785 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,785 - src.bot - INFO - Text content: Всем здравствуйте! Сегодня в отель заселилась, не ожидала, что столько тут Комаров, прям в номере. М
+2025-05-15 18:37:19,785 - src.bot - INFO - Forwarded from: 988438861 (Maria)
+2025-05-15 18:37:19,785 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,785 - src.bot - INFO - Current buffer size: 8
+2025-05-15 18:37:19,786 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,786 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,786 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,786 - src.bot - INFO - Text content: Ого.. Была апрель - май    ни одного не встретила
+2025-05-15 18:37:19,787 - src.bot - INFO - Forwarded from: 583008489 (Анна)
+2025-05-15 18:37:19,787 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,787 - src.bot - INFO - Current buffer size: 9
+2025-05-15 18:37:19,787 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,788 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,788 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,788 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,788 - src.bot - INFO - Message type: photo
+2025-05-15 18:37:19,788 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,788 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,789 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,789 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,789 - src.bot - INFO - Received message. User state: ReviewStates:collecting_reviews
+2025-05-15 18:37:19,789 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,790 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,790 - src.bot - INFO - Message type: text
+2025-05-15 18:37:19,799 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 18:37:19,799 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,800 - src.bot - INFO - Current buffer size: 10
+2025-05-15 18:37:19,864 - src.bot - INFO - Buffer contains: 10 text, 0 photo, 0 video, 0 voice messages
+2025-05-15 18:37:19,864 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,865 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,865 - src.bot - INFO - Message type: video
+2025-05-15 18:37:19,865 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 18:37:19,865 - src.bot - INFO - Has video
+2025-05-15 18:37:19,865 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,865 - src.bot - INFO - Current buffer size: 11
+2025-05-15 18:37:19,865 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,866 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,866 - src.bot - INFO - Message type: video
+2025-05-15 18:37:19,866 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 18:37:19,866 - src.bot - INFO - Has video
+2025-05-15 18:37:19,866 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,866 - src.bot - INFO - Current buffer size: 12
+2025-05-15 18:37:19,866 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,866 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,866 - src.bot - INFO - Message type: video
+2025-05-15 18:37:19,867 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 18:37:19,867 - src.bot - INFO - Has video
+2025-05-15 18:37:19,867 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,867 - src.bot - INFO - Current buffer size: 13
+2025-05-15 18:37:19,867 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,867 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,867 - src.bot - INFO - Message type: video
+2025-05-15 18:37:19,867 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 18:37:19,868 - src.bot - INFO - Has video
+2025-05-15 18:37:19,868 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,868 - src.bot - INFO - Current buffer size: 14
+2025-05-15 18:37:19,868 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,868 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 18:37:19,869 - src.bot - INFO - Message type: video
+2025-05-15 18:37:19,869 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 18:37:19,869 - src.bot - INFO - Has video
+2025-05-15 18:37:19,869 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 18:37:19,870 - src.bot - INFO - Current buffer size: 15
+2025-05-15 18:37:19,895 - src.bot - INFO - Buffer contains: 10 text, 0 photo, 5 video, 0 voice messages
+2025-05-15 18:37:19,895 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:19,957 - src.bot - INFO - Buffer contains: 10 text, 0 photo, 5 video, 0 voice messages
+2025-05-15 18:37:19,957 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 18:37:23,753 - src.bot - INFO - === START SAVING BUFFER ===
+2025-05-15 18:37:23,754 - src.bot - INFO - Starting to save 15 messages
+2025-05-15 18:37:23,754 - src.bot - INFO - Buffer contains: 10 text, 0 photo, 5 video, 0 voice messages
+2025-05-15 18:37:23,754 - src.bot - INFO - 
+Processing message 1/15
+2025-05-15 18:37:23,754 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:23,754 - src.bot - INFO - Message type: text
+2025-05-15 18:37:23,754 - src.bot - INFO - Looking up author 760404226
+2025-05-15 18:37:23,856 - src.bot - INFO - Found existing author with ID: 6
+2025-05-15 18:37:23,856 - src.bot - INFO - Creating review. Text preview: Аренас дорадос у нас. Пока сложно сказать. Мы втор
+2025-05-15 18:37:23,955 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:24,054 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:24,260 - src.bot - INFO - Created review with ID: 13
+2025-05-15 18:37:24,261 - src.bot - INFO - 
+Processing message 2/15
+2025-05-15 18:37:24,262 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:24,262 - src.bot - INFO - Message type: text
+2025-05-15 18:37:24,262 - src.bot - INFO - Looking up author 1716264200
+2025-05-15 18:37:24,357 - src.bot - INFO - Found existing author with ID: 7
+2025-05-15 18:37:24,357 - src.bot - INFO - Creating review. Text preview: Всем привет! Есть кто летит или уже там? Взяли тур
+2025-05-15 18:37:24,453 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:24,550 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:24,745 - src.bot - INFO - Created review with ID: 14
+2025-05-15 18:37:24,745 - src.bot - INFO - 
+Processing message 3/15
+2025-05-15 18:37:24,745 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:24,746 - src.bot - INFO - Message type: text
+2025-05-15 18:37:24,746 - src.bot - INFO - Looking up author 476623979
+2025-05-15 18:37:24,840 - src.bot - INFO - Found existing author with ID: 8
+2025-05-15 18:37:24,841 - src.bot - INFO - Creating review. Text preview: И ещё, комары в номере/ на территории есть?
+2025-05-15 18:37:24,951 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:25,046 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:25,235 - src.bot - INFO - Created review with ID: 15
+2025-05-15 18:37:25,236 - src.bot - INFO - 
+Processing message 4/15
+2025-05-15 18:37:25,236 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:25,236 - src.bot - INFO - Message type: text
+2025-05-15 18:37:25,236 - src.bot - INFO - Creating review. Text preview: Ольга, подскажите, пожалуйста, вы экскурсии брали?
+2025-05-15 18:37:25,427 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:25,521 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:25,711 - src.bot - INFO - Created review with ID: 16
+2025-05-15 18:37:25,711 - src.bot - INFO - 
+Processing message 5/15
+2025-05-15 18:37:25,711 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:25,712 - src.bot - INFO - Message type: text
+2025-05-15 18:37:25,712 - src.bot - INFO - Creating review. Text preview: И про розетки уточните пожалуйста. Нужны к нашим в
+2025-05-15 18:37:25,901 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:25,996 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:26,185 - src.bot - INFO - Created review with ID: 17
+2025-05-15 18:37:26,266 - src.bot - INFO - 
+Processing message 6/15
+2025-05-15 18:37:26,267 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:26,267 - src.bot - INFO - Message type: text
+2025-05-15 18:37:26,267 - src.bot - INFO - Looking up author 6133519408
+2025-05-15 18:37:26,365 - src.bot - INFO - Found existing author with ID: 9
+2025-05-15 18:37:26,365 - src.bot - INFO - Creating review. Text preview: Согласен,были с 5.06 на 10 дней.все хорошо,еда не 
+2025-05-15 18:37:26,460 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:26,555 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:26,743 - src.bot - INFO - Created review with ID: 18
+2025-05-15 18:37:26,744 - src.bot - INFO - 
+Processing message 7/15
+2025-05-15 18:37:26,744 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:26,754 - src.bot - INFO - Message type: text
+2025-05-15 18:37:26,754 - src.bot - INFO - Looking up author 144993410
+2025-05-15 18:37:26,850 - src.bot - INFO - Found existing author with ID: 10
+2025-05-15 18:37:26,850 - src.bot - INFO - Creating review. Text preview: А мы были в ноябре. Нам все очень понравилось. Оте
+2025-05-15 18:37:26,945 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:27,041 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:27,230 - src.bot - INFO - Created review with ID: 19
+2025-05-15 18:37:27,231 - src.bot - INFO - 
+Processing message 8/15
+2025-05-15 18:37:27,231 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:27,231 - src.bot - INFO - Message type: text
+2025-05-15 18:37:27,231 - src.bot - INFO - Looking up author 988438861
+2025-05-15 18:37:27,326 - src.bot - INFO - Found existing author with ID: 11
+2025-05-15 18:37:27,326 - src.bot - INFO - Creating review. Text preview: Всем здравствуйте! Сегодня в отель заселилась, не 
+2025-05-15 18:37:27,421 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:27,518 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:27,707 - src.bot - INFO - Created review with ID: 20
+2025-05-15 18:37:27,708 - src.bot - INFO - 
+Processing message 9/15
+2025-05-15 18:37:27,708 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:27,708 - src.bot - INFO - Message type: text
+2025-05-15 18:37:27,708 - src.bot - INFO - Looking up author 583008489
+2025-05-15 18:37:27,804 - src.bot - INFO - Found existing author with ID: 12
+2025-05-15 18:37:27,805 - src.bot - INFO - Creating review. Text preview: Ого.. Была апрель - май    ни одного не встретила
+2025-05-15 18:37:27,899 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:27,994 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:28,182 - src.bot - INFO - Created review with ID: 21
+2025-05-15 18:37:28,182 - src.bot - INFO - 
+Processing message 10/15
+2025-05-15 18:37:28,183 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:28,183 - src.bot - INFO - Message type: text
+2025-05-15 18:37:28,183 - src.bot - INFO - Looking up author 5355013106
+2025-05-15 18:37:28,284 - src.bot - INFO - Creating new author: Ирина
+2025-05-15 18:37:28,382 - src.models - INFO - Создан новый автор: Ирина (id: 5355013106)
+2025-05-15 18:37:28,476 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:28,666 - src.bot - INFO - Created author with ID: 13
+2025-05-15 18:37:28,667 - src.bot - INFO - Creating review. Text preview: Сегодняшний ужин, всё хуже и хуже, спасает только 
+2025-05-15 18:37:28,763 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:29,171 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:29,359 - src.bot - INFO - Created review with ID: 22
+2025-05-15 18:37:29,508 - src.bot - INFO - 
+Processing message 11/15
+2025-05-15 18:37:29,508 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:29,508 - src.bot - INFO - Message type: video
+2025-05-15 18:37:29,508 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 18:37:29,699 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:29,795 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:29,983 - src.bot - INFO - Created review with ID: 23
+2025-05-15 18:37:29,984 - src.bot - INFO - Processing video attachment
+2025-05-15 18:37:30,080 - src.models - INFO - Создан новый медиафайл: video для отзыва #23
+2025-05-15 18:37:30,175 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:30,175 - src.bot - INFO - Saved media attachment
+2025-05-15 18:37:30,175 - src.bot - INFO - 
+Processing message 12/15
+2025-05-15 18:37:30,175 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:30,176 - src.bot - INFO - Message type: video
+2025-05-15 18:37:30,176 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 18:37:30,460 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:30,555 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:30,743 - src.bot - INFO - Created review with ID: 24
+2025-05-15 18:37:30,744 - src.bot - INFO - Processing video attachment
+2025-05-15 18:37:30,844 - src.models - INFO - Создан новый медиафайл: video для отзыва #24
+2025-05-15 18:37:30,939 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:30,939 - src.bot - INFO - Saved media attachment
+2025-05-15 18:37:30,940 - src.bot - INFO - 
+Processing message 13/15
+2025-05-15 18:37:30,940 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:30,940 - src.bot - INFO - Message type: video
+2025-05-15 18:37:30,940 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 18:37:31,224 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:31,320 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:31,509 - src.bot - INFO - Created review with ID: 25
+2025-05-15 18:37:31,509 - src.bot - INFO - Processing video attachment
+2025-05-15 18:37:31,605 - src.models - INFO - Создан новый медиафайл: video для отзыва #25
+2025-05-15 18:37:31,700 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:31,701 - src.bot - INFO - Saved media attachment
+2025-05-15 18:37:31,701 - src.bot - INFO - 
+Processing message 14/15
+2025-05-15 18:37:31,701 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:31,701 - src.bot - INFO - Message type: video
+2025-05-15 18:37:31,701 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 18:37:31,985 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:32,080 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:32,269 - src.bot - INFO - Created review with ID: 26
+2025-05-15 18:37:32,269 - src.bot - INFO - Processing video attachment
+2025-05-15 18:37:32,364 - src.models - INFO - Создан новый медиафайл: video для отзыва #26
+2025-05-15 18:37:32,459 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:32,459 - src.bot - INFO - Saved media attachment
+2025-05-15 18:37:32,459 - src.bot - INFO - 
+Processing message 15/15
+2025-05-15 18:37:32,459 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 18:37:32,459 - src.bot - INFO - Message type: video
+2025-05-15 18:37:32,459 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 18:37:32,746 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 18:37:32,841 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:33,030 - src.bot - INFO - Created review with ID: 27
+2025-05-15 18:37:33,031 - src.bot - INFO - Processing video attachment
+2025-05-15 18:37:33,126 - src.models - INFO - Создан новый медиафайл: video для отзыва #27
+2025-05-15 18:37:33,220 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 18:37:33,221 - src.bot - INFO - Saved media attachment
+2025-05-15 18:37:33,479 - src.bot - INFO - === END SAVING BUFFER ===
+
