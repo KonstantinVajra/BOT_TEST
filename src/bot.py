@@ -4,7 +4,7 @@ from telebot.storage import StateMemoryStorage
 from telebot import types
 from typing import Optional, Dict
 from src.models import Author, Review, Media, Category
-from datetime import datetime
+from datetime import datetime, timedelta
 import logging
 import os
 import atexit
@@ -94,7 +94,33 @@ class ReviewBot:
         self.bot.set_my_commands(commands)
 
     def setup_handlers(self):
-        # Add debug handler for all messages
+        # Command handlers
+        self.bot.message_handler(commands=['start', 'help'])(self.handle_start)
+        self.bot.message_handler(commands=['cat'])(self.handle_categories)
+        self.bot.message_handler(commands=['save'])(self.handle_save_buffer)
+        self.bot.message_handler(commands=['clear'])(self.handle_clear_buffer)
+        self.bot.message_handler(commands=['stop'])(self.handle_stop)
+        
+        # Dynamic category handlers
+        categories = self.db.query(Category.name).distinct().all()
+        for category in categories:
+            cmd = f"list_{transliterate(category[0])}"
+            self.category_commands[cmd] = category[0]
+            self.bot.message_handler(commands=[cmd])(self.handle_list_items)
+        
+        # Handle item selection via deep linking
+        self.bot.message_handler(func=lambda message: message.text and message.text.startswith('/select_'))(self.handle_select)
+        
+        # Message handlers for collecting reviews - handle all forwarded messages from admin
+        self.bot.message_handler(
+            func=lambda message: (
+                message.from_user.id == self.admin_id and 
+                message.forward_from is not None
+            ),
+            content_types=['text', 'photo', 'video', 'voice', 'document', 'audio', 'animation']
+        )(self.buffer_review)
+
+        # Add debug handler for all other messages
         @self.bot.message_handler(func=lambda message: True, content_types=['text', 'photo', 'video', 'voice', 'document', 'audio', 'sticker', 'animation'])
         def debug_handler(message):
             current_state = self.bot.get_state(message.from_user.id, message.chat.id)
@@ -116,32 +142,6 @@ class ReviewBot:
             logger.info(f"Has sticker: {bool(message.sticker)}")
             logger.info(f"Has animation: {bool(message.animation)}")
             logger.info("=== END INCOMING MESSAGE ===\n")
-
-        # Command handlers
-        self.bot.message_handler(commands=['start', 'help'])(self.handle_start)
-        self.bot.message_handler(commands=['cat'])(self.handle_categories)
-        self.bot.message_handler(commands=['save'])(self.handle_save_buffer)
-        self.bot.message_handler(commands=['clear'])(self.handle_clear_buffer)
-        
-        # Dynamic category handlers
-        categories = self.db.query(Category.name).distinct().all()
-        for category in categories:
-            cmd = f"list_{transliterate(category[0])}"
-            self.category_commands[cmd] = category[0]
-            self.bot.message_handler(commands=[cmd])(self.handle_list_items)
-        
-        # Handle item selection via deep linking
-        self.bot.message_handler(func=lambda message: message.text.startswith('/select_'))(self.handle_select)
-        self.bot.message_handler(commands=['stop'])(self.handle_stop)
-        
-        # Message handlers for collecting reviews - handle all forwarded messages from admin
-        self.bot.message_handler(
-            func=lambda message: (
-                message.from_user.id == self.admin_id and 
-                message.forward_from is not None
-            ),
-            content_types=['text', 'photo', 'video', 'voice', 'document', 'audio', 'animation']
-        )(self.buffer_review)
 
     def handle_start(self, message):
         if message.from_user.id != self.admin_id:
@@ -301,6 +301,25 @@ class ReviewBot:
             logger.warning("No category/item selected - skipping")
             self.bot.reply_to(message, "Сначала выберите категорию и объект через меню.")
             return
+
+        # Проверяем на дубликаты
+        is_duplicate, existing_review = self.check_duplicate_review(
+            message,
+            message.forward_from.id,
+            selection['category'],
+            selection['item']
+        )
+
+        if is_duplicate:
+            warning_msg = (
+                "⚠️ Обнаружен возможный дубликат отзыва!\n\n"
+                f"Существующий отзыв от {existing_review.timestamp.strftime('%d.%m.%Y %H:%M')}:\n"
+                f"{existing_review.text[:100]}...\n\n"
+                "Вы уверены, что хотите добавить этот отзыв?\n"
+                "Используйте /save для сохранения или /clear для очистки буфера."
+            )
+            self.bot.reply_to(message, warning_msg)
+            logger.warning(f"Duplicate review detected for author {message.forward_from.id}")
 
         logger.info(f"Adding to buffer: {selection['category']} - {selection['item']}")
         
@@ -560,6 +579,43 @@ class ReviewBot:
             "/stop - закончить сбор отзывов\n"
             "/help - показать эту справку"
         )
+
+    def check_duplicate_review(self, message, author_id, category, item):
+        """Проверяет наличие дубликатов отзыва"""
+        try:
+            # Получаем текст отзыва
+            review_text = message.text if message.text else message.caption
+            if not review_text:
+                return False, None
+
+            # Проверяем отзывы автора за последние 24 часа
+            yesterday = datetime.now() - timedelta(days=1)
+            recent_review = self.db.query(Review)\
+                .join(Author)\
+                .filter(
+                    Author.telegram_id == author_id,
+                    Review.category == category,
+                    Review.reference_name == item,
+                    Review.timestamp >= yesterday
+                )\
+                .order_by(Review.timestamp.desc())\
+                .first()
+
+            if recent_review:
+                # Если найден недавний отзыв, проверяем схожесть текста
+                if recent_review.text and review_text:
+                    # Простое сравнение текста (можно улучшить алгоритм)
+                    similarity = len(set(review_text.split()) & set(recent_review.text.split())) / \
+                               len(set(review_text.split() + recent_review.text.split()))
+                    
+                    if similarity > 0.7:  # Порог схожести 70%
+                        return True, recent_review
+
+            return False, None
+
+        except Exception as e:
+            logger.error(f"Ошибка при проверке дубликатов: {str(e)}", exc_info=True)
+            return False, None
 
     def run(self):
         if not check_bot_instance():
