@@ -914,3 +914,2084 @@ Processing message 15/15
 2025-05-15 18:37:33,221 - src.bot - INFO - Saved media attachment
 2025-05-15 18:37:33,479 - src.bot - INFO - === END SAVING BUFFER ===
 
+2025-05-15 19:00:02,234 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 19:00:02,235 - src.bot - INFO - Starting bot polling...
+2025-05-15 19:00:24,345 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:00:24,346 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:00:24,347 - src.bot - INFO - Message ID: 24535
+2025-05-15 19:00:24,347 - src.bot - INFO - Content type: text
+2025-05-15 19:00:24,347 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:00:24,348 - src.bot - INFO - Current state: None
+2025-05-15 19:00:24,348 - src.bot - INFO - Has text: True
+2025-05-15 19:00:24,348 - src.bot - INFO - Has caption: False
+2025-05-15 19:00:24,348 - src.bot - INFO - Has photo: False
+2025-05-15 19:00:24,349 - src.bot - INFO - Has video: False
+2025-05-15 19:00:24,349 - src.bot - INFO - Has voice: False
+2025-05-15 19:00:24,349 - src.bot - INFO - Has document: False
+2025-05-15 19:00:24,350 - src.bot - INFO - Has audio: False
+2025-05-15 19:00:24,350 - src.bot - INFO - Has sticker: False
+2025-05-15 19:00:24,350 - src.bot - INFO - Has animation: False
+2025-05-15 19:00:24,350 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:00:35,687 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:00:35,688 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:00:35,689 - src.bot - INFO - Message ID: 24536
+2025-05-15 19:00:35,689 - src.bot - INFO - Content type: text
+2025-05-15 19:00:35,689 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:00:35,689 - src.bot - INFO - Current state: None
+2025-05-15 19:00:35,689 - src.bot - INFO - Has text: True
+2025-05-15 19:00:35,689 - src.bot - INFO - Has caption: False
+2025-05-15 19:00:35,690 - src.bot - INFO - Has photo: False
+2025-05-15 19:00:35,690 - src.bot - INFO - Has video: False
+2025-05-15 19:00:35,690 - src.bot - INFO - Has voice: False
+2025-05-15 19:00:35,690 - src.bot - INFO - Has document: False
+2025-05-15 19:00:35,690 - src.bot - INFO - Has audio: False
+2025-05-15 19:00:35,690 - src.bot - INFO - Has sticker: False
+2025-05-15 19:00:35,690 - src.bot - INFO - Has animation: False
+2025-05-15 19:00:35,690 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:02:49,946 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 19:02:49,947 - src.bot - INFO - Starting bot polling...
+2025-05-15 19:03:33,156 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:03:33,157 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:03:33,157 - src.bot - INFO - Message ID: 24537
+2025-05-15 19:03:33,157 - src.bot - INFO - Content type: text
+2025-05-15 19:03:33,157 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Current state: None
+2025-05-15 19:03:33,158 - src.bot - INFO - Has text: True
+2025-05-15 19:03:33,158 - src.bot - INFO - Has caption: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Has photo: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Has video: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Has voice: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Has document: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Has audio: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Has sticker: False
+2025-05-15 19:03:33,158 - src.bot - INFO - Has animation: False
+2025-05-15 19:03:33,158 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:03:36,477 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:03:36,478 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:03:36,478 - src.bot - INFO - Message ID: 24538
+2025-05-15 19:03:36,479 - src.bot - INFO - Content type: text
+2025-05-15 19:03:36,479 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:03:36,479 - src.bot - INFO - Current state: None
+2025-05-15 19:03:36,479 - src.bot - INFO - Has text: True
+2025-05-15 19:03:36,479 - src.bot - INFO - Has caption: False
+2025-05-15 19:03:36,479 - src.bot - INFO - Has photo: False
+2025-05-15 19:03:36,479 - src.bot - INFO - Has video: False
+2025-05-15 19:03:36,480 - src.bot - INFO - Has voice: False
+2025-05-15 19:03:36,480 - src.bot - INFO - Has document: False
+2025-05-15 19:03:36,480 - src.bot - INFO - Has audio: False
+2025-05-15 19:03:36,480 - src.bot - INFO - Has sticker: False
+2025-05-15 19:03:36,480 - src.bot - INFO - Has animation: False
+2025-05-15 19:03:36,480 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:03:40,877 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:03:40,877 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:03:40,878 - src.bot - INFO - Message ID: 24539
+2025-05-15 19:03:40,878 - src.bot - INFO - Content type: text
+2025-05-15 19:03:40,878 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:03:40,878 - src.bot - INFO - Current state: None
+2025-05-15 19:03:40,878 - src.bot - INFO - Has text: True
+2025-05-15 19:03:40,878 - src.bot - INFO - Has caption: False
+2025-05-15 19:03:40,878 - src.bot - INFO - Has photo: False
+2025-05-15 19:03:40,878 - src.bot - INFO - Has video: False
+2025-05-15 19:03:40,878 - src.bot - INFO - Has voice: False
+2025-05-15 19:03:40,878 - src.bot - INFO - Has document: False
+2025-05-15 19:03:40,878 - src.bot - INFO - Has audio: False
+2025-05-15 19:03:40,878 - src.bot - INFO - Has sticker: False
+2025-05-15 19:03:40,879 - src.bot - INFO - Has animation: False
+2025-05-15 19:03:40,879 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:03:42,576 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:03:42,577 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:03:42,578 - src.bot - INFO - Message ID: 24540
+2025-05-15 19:03:42,578 - src.bot - INFO - Content type: text
+2025-05-15 19:03:42,578 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:03:42,578 - src.bot - INFO - Current state: None
+2025-05-15 19:03:42,578 - src.bot - INFO - Has text: True
+2025-05-15 19:03:42,578 - src.bot - INFO - Has caption: False
+2025-05-15 19:03:42,578 - src.bot - INFO - Has photo: False
+2025-05-15 19:03:42,579 - src.bot - INFO - Has video: False
+2025-05-15 19:03:42,579 - src.bot - INFO - Has voice: False
+2025-05-15 19:03:42,579 - src.bot - INFO - Has document: False
+2025-05-15 19:03:42,579 - src.bot - INFO - Has audio: False
+2025-05-15 19:03:42,579 - src.bot - INFO - Has sticker: False
+2025-05-15 19:03:42,579 - src.bot - INFO - Has animation: False
+2025-05-15 19:03:42,579 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:04:45,415 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 19:04:45,416 - src.bot - INFO - Starting bot polling...
+2025-05-15 19:05:33,012 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 19:05:33,013 - src.bot - INFO - Starting bot polling...
+2025-05-15 19:06:08,265 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,266 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,266 - src.bot - INFO - Message type: text
+2025-05-15 19:06:08,268 - src.bot - INFO - Message type: video
+2025-05-15 19:06:08,268 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:06:08,278 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:06:08,278 - src.bot - INFO - Has video
+2025-05-15 19:06:08,281 - src.bot - INFO - Video size: 6202771 bytes
+2025-05-15 19:06:08,281 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,281 - src.bot - INFO - Current buffer size: 1
+2025-05-15 19:06:08,281 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,283 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,283 - src.bot - INFO - Message type: video
+2025-05-15 19:06:08,283 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:06:08,284 - src.bot - INFO - Has video
+2025-05-15 19:06:08,284 - src.bot - INFO - Video size: 4653019 bytes
+2025-05-15 19:06:08,285 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,285 - src.bot - INFO - Current buffer size: 2
+2025-05-15 19:06:08,285 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,285 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,286 - src.bot - INFO - Message type: video
+2025-05-15 19:06:08,286 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:06:08,286 - src.bot - INFO - Has video
+2025-05-15 19:06:08,286 - src.bot - INFO - Video size: 3597959 bytes
+2025-05-15 19:06:08,286 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,286 - src.bot - INFO - Current buffer size: 3
+2025-05-15 19:06:08,286 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,287 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,287 - src.bot - INFO - Message type: video
+2025-05-15 19:06:08,287 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:06:08,287 - src.bot - INFO - Has video
+2025-05-15 19:06:08,287 - src.bot - INFO - Video size: 3667459 bytes
+2025-05-15 19:06:08,288 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,288 - src.bot - INFO - Current buffer size: 4
+2025-05-15 19:06:08,288 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,288 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,288 - src.bot - INFO - Message type: video
+2025-05-15 19:06:08,288 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:06:08,289 - src.bot - INFO - Has video
+2025-05-15 19:06:08,289 - src.bot - INFO - Video size: 12430967 bytes
+2025-05-15 19:06:08,289 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,290 - src.bot - INFO - Current buffer size: 5
+2025-05-15 19:06:08,450 - src.bot - INFO - Buffer contains: 0 text, 0 photo, 5 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:06:08,450 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,451 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,451 - src.bot - INFO - Message type: text
+2025-05-15 19:06:08,451 - src.bot - INFO - Text content: Сегодня норм обед, говядина отварная, рис жаренный, зелень, жалко только, что нашёл для себя острый,
+2025-05-15 19:06:08,451 - src.bot - INFO - Forwarded from: 5867802201 (@fidel)
+2025-05-15 19:06:08,547 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,548 - src.bot - INFO - Current buffer size: 6
+2025-05-15 19:06:08,548 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,548 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,548 - src.bot - INFO - Message type: text
+2025-05-15 19:06:08,548 - src.bot - INFO - Text content: Где салаты из макарон и риса )) в тарелке, коричневый такой, рекомендую кто любит острое
+2025-05-15 19:06:08,548 - src.bot - INFO - Forwarded from: 5867802201 (@fidel)
+2025-05-15 19:06:08,564 - src.bot - WARNING - Duplicate review detected for author 5355013106
+2025-05-15 19:06:08,565 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,565 - src.bot - INFO - Current buffer size: 7
+2025-05-15 19:06:08,565 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,566 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:06:08,566 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:06:08,566 - src.bot - INFO - Message ID: 24557
+2025-05-15 19:06:08,566 - src.bot - INFO - Content type: text
+2025-05-15 19:06:08,566 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:06:08,566 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:06:08,566 - src.bot - INFO - Has text: True
+2025-05-15 19:06:08,567 - src.bot - INFO - Has caption: False
+2025-05-15 19:06:08,567 - src.bot - INFO - Has photo: False
+2025-05-15 19:06:08,567 - src.bot - INFO - Has video: False
+2025-05-15 19:06:08,567 - src.bot - INFO - Has voice: False
+2025-05-15 19:06:08,567 - src.bot - INFO - Has document: False
+2025-05-15 19:06:08,567 - src.bot - INFO - Has audio: False
+2025-05-15 19:06:08,567 - src.bot - INFO - Has sticker: False
+2025-05-15 19:06:08,567 - src.bot - INFO - Has animation: False
+2025-05-15 19:06:08,567 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:06:08,568 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:06:08,568 - src.bot - INFO - Message type: photo
+2025-05-15 19:06:08,571 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:06:08,571 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:06:08,740 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,740 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:06:08,741 - src.bot - INFO - Current buffer size: 8
+2025-05-15 19:06:08,741 - src.bot - INFO - Current buffer size: 9
+2025-05-15 19:06:08,741 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:08,741 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:06:12,592 - src.bot - INFO - === START SAVING BUFFER ===
+2025-05-15 19:06:12,593 - src.bot - INFO - Starting to save 9 messages
+2025-05-15 19:06:12,594 - src.bot - INFO - Buffer contains: 3 text, 1 photo, 5 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:06:12,595 - src.bot - INFO - 
+Processing message 1/9
+2025-05-15 19:06:12,595 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:12,595 - src.bot - INFO - Message type: video
+2025-05-15 19:06:12,595 - src.bot - INFO - Looking up author 5355013106
+2025-05-15 19:06:12,692 - src.bot - INFO - Found existing author with ID: 13
+2025-05-15 19:06:12,692 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:06:12,792 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:12,888 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:13,079 - src.bot - INFO - Created review with ID: 28
+2025-05-15 19:06:13,080 - src.bot - INFO - Processing video attachment
+2025-05-15 19:06:13,177 - src.models - INFO - Создан новый медиафайл: video для отзыва #28
+2025-05-15 19:06:13,274 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:13,274 - src.bot - INFO - Saved media attachment
+2025-05-15 19:06:13,274 - src.bot - INFO - 
+Processing message 2/9
+2025-05-15 19:06:13,274 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:13,275 - src.bot - INFO - Message type: video
+2025-05-15 19:06:13,275 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:06:13,561 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:13,658 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:13,848 - src.bot - INFO - Created review with ID: 29
+2025-05-15 19:06:13,848 - src.bot - INFO - Processing video attachment
+2025-05-15 19:06:13,944 - src.models - INFO - Создан новый медиафайл: video для отзыва #29
+2025-05-15 19:06:14,040 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:14,041 - src.bot - INFO - Saved media attachment
+2025-05-15 19:06:14,041 - src.bot - INFO - 
+Processing message 3/9
+2025-05-15 19:06:14,041 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:14,041 - src.bot - INFO - Message type: video
+2025-05-15 19:06:14,041 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:06:14,329 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:14,426 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:14,618 - src.bot - INFO - Created review with ID: 30
+2025-05-15 19:06:14,619 - src.bot - INFO - Processing video attachment
+2025-05-15 19:06:14,716 - src.models - INFO - Создан новый медиафайл: video для отзыва #30
+2025-05-15 19:06:14,811 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:14,812 - src.bot - INFO - Saved media attachment
+2025-05-15 19:06:14,812 - src.bot - INFO - 
+Processing message 4/9
+2025-05-15 19:06:14,812 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:14,812 - src.bot - INFO - Message type: video
+2025-05-15 19:06:14,812 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:06:15,099 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:15,194 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:15,385 - src.bot - INFO - Created review with ID: 31
+2025-05-15 19:06:15,385 - src.bot - INFO - Processing video attachment
+2025-05-15 19:06:15,481 - src.models - INFO - Создан новый медиафайл: video для отзыва #31
+2025-05-15 19:06:15,578 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:15,578 - src.bot - INFO - Saved media attachment
+2025-05-15 19:06:15,578 - src.bot - INFO - 
+Processing message 5/9
+2025-05-15 19:06:15,579 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:15,579 - src.bot - INFO - Message type: video
+2025-05-15 19:06:15,579 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:06:15,866 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:15,962 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:16,152 - src.bot - INFO - Created review with ID: 32
+2025-05-15 19:06:16,152 - src.bot - INFO - Processing video attachment
+2025-05-15 19:06:16,248 - src.models - INFO - Создан новый медиафайл: video для отзыва #32
+2025-05-15 19:06:16,343 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:16,344 - src.bot - INFO - Saved media attachment
+2025-05-15 19:06:16,437 - src.bot - INFO - 
+Processing message 6/9
+2025-05-15 19:06:16,437 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:16,437 - src.bot - INFO - Message type: text
+2025-05-15 19:06:16,437 - src.bot - INFO - Looking up author 5867802201
+2025-05-15 19:06:16,627 - src.bot - INFO - Creating new author: @fidel
+2025-05-15 19:06:16,722 - src.models - INFO - Создан новый автор: @fidel (id: 5867802201)
+2025-05-15 19:06:16,840 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:17,031 - src.bot - INFO - Created author with ID: 14
+2025-05-15 19:06:17,032 - src.bot - INFO - Creating review. Text preview: Сегодня норм обед, говядина отварная, рис жаренный
+2025-05-15 19:06:17,128 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:17,224 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:17,415 - src.bot - INFO - Created review with ID: 33
+2025-05-15 19:06:17,415 - src.bot - INFO - 
+Processing message 7/9
+2025-05-15 19:06:17,415 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:17,415 - src.bot - INFO - Message type: text
+2025-05-15 19:06:17,416 - src.bot - INFO - Creating review. Text preview: Сегодняшний ужин, всё хуже и хуже, спасает только 
+2025-05-15 19:06:17,607 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:17,703 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:17,896 - src.bot - INFO - Created review with ID: 34
+2025-05-15 19:06:17,896 - src.bot - INFO - 
+Processing message 8/9
+2025-05-15 19:06:17,896 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:17,896 - src.bot - INFO - Message type: text
+2025-05-15 19:06:17,897 - src.bot - INFO - Creating review. Text preview: Где салаты из макарон и риса )) в тарелке, коричне
+2025-05-15 19:06:18,088 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:18,184 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:18,375 - src.bot - INFO - Created review with ID: 35
+2025-05-15 19:06:18,375 - src.bot - INFO - 
+Processing message 9/9
+2025-05-15 19:06:18,375 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:06:18,376 - src.bot - INFO - Message type: photo
+2025-05-15 19:06:18,570 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:06:18,666 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:18,856 - src.bot - INFO - Created review with ID: 36
+2025-05-15 19:06:18,856 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:06:18,952 - src.models - INFO - Создан новый медиафайл: photo для отзыва #36
+2025-05-15 19:06:19,049 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:06:19,050 - src.bot - INFO - Saved media attachment
+2025-05-15 19:06:19,199 - src.bot - INFO - === END SAVING BUFFER ===
+
+2025-05-15 19:23:25,283 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 19:23:25,284 - src.bot - INFO - Starting bot polling...
+2025-05-15 19:24:10,193 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,193 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,194 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,194 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,195 - src.bot - INFO - Message ID: 24572
+2025-05-15 19:24:10,195 - src.bot - INFO - Text content: Он компактный, двухэтажные домики, меня например, не устраивают многоэтажные здания, номера хорошие,
+2025-05-15 19:24:10,195 - src.bot - INFO - Content type: text
+2025-05-15 19:24:10,195 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:24:10,195 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,196 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,196 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,196 - src.bot - INFO - Current buffer size: 1
+2025-05-15 19:24:10,196 - src.bot - INFO - Has text: True
+2025-05-15 19:24:10,196 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,196 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,196 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,196 - src.bot - INFO - Has photo: False
+2025-05-15 19:24:10,197 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,197 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,197 - src.bot - INFO - Text content: Обед около пляжа, не скажу что АХ, рис сыроват, ракушки ни чё так
+2025-05-15 19:24:10,197 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,197 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:24:10,197 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,197 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,197 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,198 - src.bot - INFO - Current buffer size: 2
+2025-05-15 19:24:10,198 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,198 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,198 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,198 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,198 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,198 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,198 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,199 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:24:10,199 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,199 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,199 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:24:10,199 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,199 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,200 - src.bot - INFO - Current buffer size: 3
+2025-05-15 19:24:10,200 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,200 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,200 - src.bot - INFO - Current buffer size: 4
+2025-05-15 19:24:10,200 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,200 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,201 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,201 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,201 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,201 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:24:10,201 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:24:10,202 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,202 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,202 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,203 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,203 - src.bot - INFO - Current buffer size: 5
+2025-05-15 19:24:10,203 - src.bot - INFO - Current buffer size: 6
+2025-05-15 19:24:10,203 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,204 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,205 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,205 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:24:10,205 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,205 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,205 - src.bot - INFO - Current buffer size: 7
+2025-05-15 19:24:10,205 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,206 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,206 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,206 - src.bot - INFO - Message ID: 24580
+2025-05-15 19:24:10,206 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,206 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,206 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,206 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,206 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,206 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,206 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,207 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,207 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,207 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,207 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,208 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,208 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,208 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,209 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,209 - src.bot - INFO - Message ID: 24581
+2025-05-15 19:24:10,209 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,209 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,210 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,210 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,210 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,210 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,210 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,210 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,211 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,211 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,211 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,211 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,211 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,211 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,212 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,212 - src.bot - INFO - Message ID: 24582
+2025-05-15 19:24:10,212 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,212 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,212 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,212 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,212 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,212 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,212 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,213 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,213 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,213 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,213 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,213 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,213 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,213 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,213 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,213 - src.bot - INFO - Message ID: 24583
+2025-05-15 19:24:10,214 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,214 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,214 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,214 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,214 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,214 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,215 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,215 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,215 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,215 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,215 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,215 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,215 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,215 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,215 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,216 - src.bot - INFO - Message ID: 24584
+2025-05-15 19:24:10,216 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,216 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,216 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,216 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,216 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,216 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,216 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,216 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,216 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,217 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,217 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,217 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,217 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,217 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,217 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,217 - src.bot - INFO - Message ID: 24585
+2025-05-15 19:24:10,217 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,218 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,218 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,218 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,218 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,218 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,218 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,218 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,219 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,219 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,219 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,219 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,219 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,219 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,219 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,219 - src.bot - INFO - Message ID: 24586
+2025-05-15 19:24:10,220 - src.bot - INFO - Content type: video
+2025-05-15 19:24:10,220 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,220 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,220 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,220 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,220 - src.bot - INFO - Has photo: False
+2025-05-15 19:24:10,220 - src.bot - INFO - Has video: True
+2025-05-15 19:24:10,220 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,220 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,220 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,221 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,221 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,221 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,221 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,221 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,221 - src.bot - INFO - Message ID: 24587
+2025-05-15 19:24:10,221 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,221 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,238 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,238 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,238 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,238 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,239 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,239 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,239 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,239 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,239 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,239 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,239 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,239 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,239 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,239 - src.bot - INFO - Message ID: 24588
+2025-05-15 19:24:10,240 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,240 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,240 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,240 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,240 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,240 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,240 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,241 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,241 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,241 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,241 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,241 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,241 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,242 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,242 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,242 - src.bot - INFO - Message ID: 24589
+2025-05-15 19:24:10,242 - src.bot - INFO - Content type: video
+2025-05-15 19:24:10,243 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,243 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,243 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,243 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,243 - src.bot - INFO - Has photo: False
+2025-05-15 19:24:10,244 - src.bot - INFO - Has video: True
+2025-05-15 19:24:10,244 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,244 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,244 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,244 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,244 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,244 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,245 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,245 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,245 - src.bot - INFO - Message ID: 24590
+2025-05-15 19:24:10,245 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,245 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,245 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,245 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,246 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,246 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,246 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,246 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,246 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,246 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,246 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,246 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,246 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,246 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,247 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,247 - src.bot - INFO - Message ID: 24591
+2025-05-15 19:24:10,247 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,247 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,247 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,247 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,247 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,247 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,247 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,247 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,248 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,248 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,248 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,248 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,248 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,248 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,248 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,248 - src.bot - INFO - Message ID: 24592
+2025-05-15 19:24:10,248 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,249 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,249 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,249 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,249 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,249 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,249 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,249 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,249 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,249 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,249 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,250 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,250 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,250 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,250 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,250 - src.bot - INFO - Message ID: 24593
+2025-05-15 19:24:10,250 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,250 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,250 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,250 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,251 - src.bot - INFO - Has caption: True
+2025-05-15 19:24:10,251 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,251 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,251 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,251 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,251 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,251 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,251 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,251 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,251 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,252 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,252 - src.bot - INFO - Text content: Только вернулись домой из этого отеля. 
+По поводу горничных
+Первые два дня была приятная горничная и
+2025-05-15 19:24:10,252 - src.bot - INFO - Forwarded from: 344567253 (Екатерина)
+2025-05-15 19:24:10,252 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,252 - src.bot - INFO - Current buffer size: 8
+2025-05-15 19:24:10,252 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,252 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,252 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,252 - src.bot - INFO - Caption content: Доброго времени суток! Разместились в домике 5 этого отеля 01.10.24. Обратно 12.10.24. Территория бо
+2025-05-15 19:24:10,253 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:24:10,253 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,253 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,253 - src.bot - INFO - Current buffer size: 9
+2025-05-15 19:24:10,253 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,254 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,254 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,254 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:24:10,254 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,254 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,254 - src.bot - INFO - Current buffer size: 10
+2025-05-15 19:24:10,287 - src.bot - INFO - Buffer contains: 2 text, 4 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:24:10,287 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,287 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,288 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,288 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:24:10,288 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,288 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,288 - src.bot - INFO - Current buffer size: 11
+2025-05-15 19:24:10,288 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,288 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,288 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,288 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:24:10,289 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,289 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,289 - src.bot - INFO - Current buffer size: 12
+2025-05-15 19:24:10,289 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,289 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,289 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,289 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:24:10,289 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,290 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,290 - src.bot - INFO - Current buffer size: 13
+2025-05-15 19:24:10,290 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,290 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,290 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,290 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:24:10,290 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,292 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,292 - src.bot - INFO - Current buffer size: 14
+2025-05-15 19:24:10,293 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,293 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,293 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,293 - src.bot - INFO - Caption content: Полотенца для тела, лица и ног были. Два кружка мыла, гель для душа 4 флакона, шампунь 4 флакона. 2 
+2025-05-15 19:24:10,294 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:24:10,294 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,295 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,295 - src.bot - INFO - Current buffer size: 15
+2025-05-15 19:24:10,332 - src.bot - INFO - Buffer contains: 3 text, 7 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:24:10,333 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,333 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,334 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,334 - src.bot - INFO - Text content: Всем привет! Отдыхаем сейчас в отеле) территория класс, номер тоже хороший, да, уставшая мебель, но 
+2025-05-15 19:24:10,334 - src.bot - INFO - Forwarded from: 203852636 (Kate)
+2025-05-15 19:24:10,334 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,334 - src.bot - INFO - Current buffer size: 16
+2025-05-15 19:24:10,334 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,334 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,334 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,335 - src.bot - INFO - Forwarded from: 203852636 (Kate)
+2025-05-15 19:24:10,335 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,335 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,335 - src.bot - INFO - Current buffer size: 17
+2025-05-15 19:24:10,335 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,335 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,335 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:10,369 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:24:10,369 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,369 - src.bot - INFO - Current buffer size: 18
+2025-05-15 19:24:10,369 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,369 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,369 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,369 - src.bot - INFO - Text content: Фруктов нет при любой формуле питания. Что-то недозрелое лежит, это не съедобно. В воллейбол играли 
+2025-05-15 19:24:10,370 - src.bot - INFO - Forwarded from: 2075762424 (Сергей)
+2025-05-15 19:24:10,370 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,370 - src.bot - INFO - Current buffer size: 19
+2025-05-15 19:24:10,370 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,370 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,370 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,370 - src.bot - INFO - Text content: Критических минусов не наблюдаем,вода горячая есть,номер убирают каждый день,территория большая и ух
+2025-05-15 19:24:10,371 - src.bot - INFO - Forwarded from: 6545825282 (Екатерина)
+2025-05-15 19:24:10,371 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,371 - src.bot - INFO - Current buffer size: 20
+2025-05-15 19:24:10,387 - src.bot - INFO - Buffer contains: 3 text, 12 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:24:10,387 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,388 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,388 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,388 - src.bot - INFO - Text content: Жили в этом отеле 2 недели, у нас рок+ был, все устраивало. Да, немного уставший номерной фонд, да е
+2025-05-15 19:24:10,388 - src.bot - INFO - Forwarded from: 5284458002 (Ольга)
+2025-05-15 19:24:10,388 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,388 - src.bot - INFO - Current buffer size: 21
+2025-05-15 19:24:10,389 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,389 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,389 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,389 - src.bot - INFO - Message ID: 24608
+2025-05-15 19:24:10,389 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,389 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,389 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,389 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,390 - src.bot - INFO - Has caption: True
+2025-05-15 19:24:10,390 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,390 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,390 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,390 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,391 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,391 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,391 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,392 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,392 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,392 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,393 - src.bot - INFO - Message ID: 24609
+2025-05-15 19:24:10,393 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,394 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,394 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,394 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,394 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,394 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,394 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,394 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,395 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,395 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,395 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,395 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,395 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,395 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,396 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,396 - src.bot - INFO - Message ID: 24610
+2025-05-15 19:24:10,396 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,397 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,399 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,400 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,400 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,401 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,401 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,402 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,403 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,403 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,403 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,403 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,403 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,403 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,404 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,404 - src.bot - INFO - Message ID: 24611
+2025-05-15 19:24:10,404 - src.bot - INFO - Content type: video
+2025-05-15 19:24:10,404 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,404 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,404 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,405 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,405 - src.bot - INFO - Has photo: False
+2025-05-15 19:24:10,405 - src.bot - INFO - Has video: True
+2025-05-15 19:24:10,405 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,406 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,406 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,406 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,406 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,406 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,406 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,407 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,407 - src.bot - INFO - Message ID: 24612
+2025-05-15 19:24:10,408 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,408 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,409 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,409 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,410 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,410 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,410 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,410 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,411 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,411 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,411 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,411 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,411 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,411 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,412 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,412 - src.bot - INFO - Message ID: 24613
+2025-05-15 19:24:10,412 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,412 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,412 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,412 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,412 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,413 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,413 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,413 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,413 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,413 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,413 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,413 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,413 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,414 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,414 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,414 - src.bot - INFO - Message ID: 24614
+2025-05-15 19:24:10,414 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,414 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,414 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,414 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,414 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,414 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,415 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,415 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,415 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,415 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,415 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,415 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,415 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,415 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,415 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,416 - src.bot - INFO - Message ID: 24615
+2025-05-15 19:24:10,416 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,416 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,416 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,416 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,416 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,416 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,417 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,417 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,417 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,417 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,417 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,417 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,417 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,418 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,418 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,418 - src.bot - INFO - Message ID: 24616
+2025-05-15 19:24:10,418 - src.bot - INFO - Content type: photo
+2025-05-15 19:24:10,418 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,418 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,418 - src.bot - INFO - Has text: False
+2025-05-15 19:24:10,418 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,418 - src.bot - INFO - Has photo: True
+2025-05-15 19:24:10,418 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,421 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,421 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,421 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,421 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,421 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,422 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,422 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,422 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,422 - src.bot - INFO - Message ID: 24617
+2025-05-15 19:24:10,422 - src.bot - INFO - Content type: text
+2025-05-15 19:24:10,423 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,423 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,423 - src.bot - INFO - Has text: True
+2025-05-15 19:24:10,423 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,423 - src.bot - INFO - Has photo: False
+2025-05-15 19:24:10,423 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,423 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,424 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,424 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,424 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,424 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,425 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,425 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:24:10,425 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:24:10,426 - src.bot - INFO - Message ID: 24618
+2025-05-15 19:24:10,426 - src.bot - INFO - Content type: text
+2025-05-15 19:24:10,426 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:24:10,426 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:24:10,427 - src.bot - INFO - Has text: True
+2025-05-15 19:24:10,427 - src.bot - INFO - Has caption: False
+2025-05-15 19:24:10,427 - src.bot - INFO - Has photo: False
+2025-05-15 19:24:10,427 - src.bot - INFO - Has video: False
+2025-05-15 19:24:10,427 - src.bot - INFO - Has voice: False
+2025-05-15 19:24:10,427 - src.bot - INFO - Has document: False
+2025-05-15 19:24:10,427 - src.bot - INFO - Has audio: False
+2025-05-15 19:24:10,427 - src.bot - INFO - Has sticker: False
+2025-05-15 19:24:10,428 - src.bot - INFO - Has animation: False
+2025-05-15 19:24:10,428 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:24:10,428 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:24:10,428 - src.bot - INFO - Message type: text
+2025-05-15 19:24:10,428 - src.bot - INFO - Text content: Мы здесь без рок+ всё норм, номер хороший,вода гор.есть ,уборка каждый день, полотенца меняют,покуша
+2025-05-15 19:24:10,428 - src.bot - INFO - Forwarded from: 5120107995 (Светлана)
+2025-05-15 19:24:10,428 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:24:10,428 - src.bot - INFO - Current buffer size: 22
+2025-05-15 19:24:10,429 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:10,458 - src.bot - INFO - Buffer contains: 6 text, 14 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:24:10,459 - src.bot - INFO - === END BUFFERING MESSAGE ===
+
+2025-05-15 19:24:22,814 - src.bot - INFO - === START SAVING BUFFER ===
+2025-05-15 19:24:22,815 - src.bot - INFO - Starting to save 22 messages
+2025-05-15 19:24:22,816 - src.bot - INFO - Buffer contains: 8 text, 14 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:24:22,816 - src.bot - INFO - 
+Processing message 1/22
+2025-05-15 19:24:22,816 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:22,816 - src.bot - INFO - Message type: text
+2025-05-15 19:24:22,817 - src.bot - INFO - Looking up author 5355013106
+2025-05-15 19:24:22,919 - src.bot - INFO - Found existing author with ID: 13
+2025-05-15 19:24:22,920 - src.bot - INFO - Creating review. Text preview: Он компактный, двухэтажные домики, меня например, 
+2025-05-15 19:24:23,019 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:23,115 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:23,306 - src.bot - INFO - Created review with ID: 37
+2025-05-15 19:24:23,306 - src.bot - INFO - 
+Processing message 2/22
+2025-05-15 19:24:23,307 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:23,307 - src.bot - INFO - Message type: text
+2025-05-15 19:24:23,307 - src.bot - INFO - Creating review. Text preview: Обед около пляжа, не скажу что АХ, рис сыроват, ра
+2025-05-15 19:24:23,498 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:23,593 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:23,782 - src.bot - INFO - Created review with ID: 38
+2025-05-15 19:24:23,783 - src.bot - INFO - 
+Processing message 3/22
+2025-05-15 19:24:23,783 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:23,783 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:23,783 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:23,988 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:24,084 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:24,273 - src.bot - INFO - Created review with ID: 39
+2025-05-15 19:24:24,273 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:24,369 - src.models - INFO - Создан новый медиафайл: photo для отзыва #39
+2025-05-15 19:24:24,464 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:24,464 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:24,464 - src.bot - INFO - 
+Processing message 4/22
+2025-05-15 19:24:24,465 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:24,465 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:24,465 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:24,749 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:24,862 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:25,052 - src.bot - INFO - Created review with ID: 40
+2025-05-15 19:24:25,053 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:25,148 - src.models - INFO - Создан новый медиафайл: photo для отзыва #40
+2025-05-15 19:24:25,243 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:25,244 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:25,244 - src.bot - INFO - 
+Processing message 5/22
+2025-05-15 19:24:25,244 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:25,244 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:25,244 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:25,528 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:25,624 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:25,814 - src.bot - INFO - Created review with ID: 41
+2025-05-15 19:24:25,814 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:25,910 - src.models - INFO - Создан новый медиафайл: photo для отзыва #41
+2025-05-15 19:24:26,005 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:26,005 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:26,162 - src.bot - INFO - 
+Processing message 6/22
+2025-05-15 19:24:26,163 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:26,163 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:26,163 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:26,470 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:26,566 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:26,756 - src.bot - INFO - Created review with ID: 42
+2025-05-15 19:24:26,756 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:26,852 - src.models - INFO - Создан новый медиафайл: photo для отзыва #42
+2025-05-15 19:24:26,947 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:26,948 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:26,948 - src.bot - INFO - 
+Processing message 7/22
+2025-05-15 19:24:26,948 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:26,948 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:26,948 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:27,233 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:27,328 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:27,517 - src.bot - INFO - Created review with ID: 43
+2025-05-15 19:24:27,517 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:27,612 - src.models - INFO - Создан новый медиафайл: photo для отзыва #43
+2025-05-15 19:24:27,755 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:27,756 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:27,756 - src.bot - INFO - 
+Processing message 8/22
+2025-05-15 19:24:27,756 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:27,756 - src.bot - INFO - Message type: text
+2025-05-15 19:24:27,756 - src.bot - INFO - Looking up author 344567253
+2025-05-15 19:24:27,970 - src.bot - INFO - Creating new author: Екатерина
+2025-05-15 19:24:28,066 - src.models - INFO - Создан новый автор: Екатерина (id: 344567253)
+2025-05-15 19:24:28,162 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:28,354 - src.bot - INFO - Created author with ID: 15
+2025-05-15 19:24:28,354 - src.bot - INFO - Creating review. Text preview: Только вернулись домой из этого отеля. 
+По поводу 
+2025-05-15 19:24:28,450 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:28,547 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:28,737 - src.bot - INFO - Created review with ID: 44
+2025-05-15 19:24:28,738 - src.bot - INFO - 
+Processing message 9/22
+2025-05-15 19:24:28,738 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:28,738 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:28,738 - src.bot - INFO - Looking up author 5257983368
+2025-05-15 19:24:28,833 - src.bot - INFO - Creating new author: Александр
+2025-05-15 19:24:28,929 - src.models - INFO - Создан новый автор: Александр (id: 5257983368)
+2025-05-15 19:24:29,024 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:29,213 - src.bot - INFO - Created author with ID: 16
+2025-05-15 19:24:29,214 - src.bot - INFO - Creating review. Text preview: Доброго времени суток! Разместились в домике 5 это
+2025-05-15 19:24:29,310 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:29,405 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:29,595 - src.bot - INFO - Created review with ID: 45
+2025-05-15 19:24:29,595 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:29,690 - src.models - INFO - Создан новый медиафайл: photo для отзыва #45
+2025-05-15 19:24:29,785 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:29,785 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:29,785 - src.bot - INFO - 
+Processing message 10/22
+2025-05-15 19:24:29,785 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:29,785 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:29,786 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:30,069 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:30,164 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:30,353 - src.bot - INFO - Created review with ID: 46
+2025-05-15 19:24:30,353 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:30,448 - src.models - INFO - Создан новый медиафайл: photo для отзыва #46
+2025-05-15 19:24:30,543 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:30,543 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:30,628 - src.bot - INFO - 
+Processing message 11/22
+2025-05-15 19:24:30,628 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:30,628 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:30,628 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:30,913 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:31,009 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:31,200 - src.bot - INFO - Created review with ID: 47
+2025-05-15 19:24:31,201 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:31,297 - src.models - INFO - Создан новый медиафайл: photo для отзыва #47
+2025-05-15 19:24:31,394 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:31,395 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:31,395 - src.bot - INFO - 
+Processing message 12/22
+2025-05-15 19:24:31,395 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:31,395 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:31,395 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:31,681 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:31,776 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:31,970 - src.bot - INFO - Created review with ID: 48
+2025-05-15 19:24:31,971 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:32,066 - src.models - INFO - Создан новый медиафайл: photo для отзыва #48
+2025-05-15 19:24:32,161 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:32,162 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:32,162 - src.bot - INFO - 
+Processing message 13/22
+2025-05-15 19:24:32,162 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:32,162 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:32,162 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:32,448 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:32,543 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:32,733 - src.bot - INFO - Created review with ID: 49
+2025-05-15 19:24:32,733 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:32,829 - src.models - INFO - Создан новый медиафайл: photo для отзыва #49
+2025-05-15 19:24:32,923 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:32,924 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:32,924 - src.bot - INFO - 
+Processing message 14/22
+2025-05-15 19:24:32,924 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:32,924 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:32,924 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:33,209 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:33,304 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:33,493 - src.bot - INFO - Created review with ID: 50
+2025-05-15 19:24:33,493 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:33,590 - src.models - INFO - Создан новый медиафайл: photo для отзыва #50
+2025-05-15 19:24:33,685 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:33,686 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:33,686 - src.bot - INFO - 
+Processing message 15/22
+2025-05-15 19:24:33,686 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:33,686 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:33,686 - src.bot - INFO - Creating review. Text preview: Полотенца для тела, лица и ног были. Два кружка мы
+2025-05-15 19:24:33,970 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:34,065 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:34,254 - src.bot - INFO - Created review with ID: 51
+2025-05-15 19:24:34,255 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:34,350 - src.models - INFO - Создан новый медиафайл: photo для отзыва #51
+2025-05-15 19:24:34,446 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:34,446 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:34,605 - src.bot - INFO - 
+Processing message 16/22
+2025-05-15 19:24:34,605 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:34,605 - src.bot - INFO - Message type: text
+2025-05-15 19:24:34,605 - src.bot - INFO - Looking up author 203852636
+2025-05-15 19:24:34,794 - src.bot - INFO - Creating new author: Kate
+2025-05-15 19:24:34,889 - src.models - INFO - Создан новый автор: Kate (id: 203852636)
+2025-05-15 19:24:34,984 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:35,174 - src.bot - INFO - Created author with ID: 17
+2025-05-15 19:24:35,174 - src.bot - INFO - Creating review. Text preview: Всем привет! Отдыхаем сейчас в отеле) территория к
+2025-05-15 19:24:35,269 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:35,366 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:35,554 - src.bot - INFO - Created review with ID: 52
+2025-05-15 19:24:35,555 - src.bot - INFO - 
+Processing message 17/22
+2025-05-15 19:24:35,555 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:35,555 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:35,556 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:24:35,747 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:35,843 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:36,035 - src.bot - INFO - Created review with ID: 53
+2025-05-15 19:24:36,035 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:36,132 - src.models - INFO - Создан новый медиафайл: photo для отзыва #53
+2025-05-15 19:24:36,229 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:36,229 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:36,230 - src.bot - INFO - 
+Processing message 18/22
+2025-05-15 19:24:36,230 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:36,230 - src.bot - INFO - Message type: photo
+2025-05-15 19:24:36,230 - src.bot - INFO - Looking up author 2088285604
+2025-05-15 19:24:36,937 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:37,127 - src.bot - INFO - Created author with ID: 18
+2025-05-15 19:24:37,128 - src.bot - INFO - Creating review. Text preview: Еда тут правда не очень , но голодными точно не ос
+2025-05-15 19:24:37,223 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:37,318 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:37,513 - src.bot - INFO - Created review with ID: 54
+2025-05-15 19:24:37,513 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:24:37,608 - src.models - INFO - Создан новый медиафайл: photo для отзыва #54
+2025-05-15 19:24:37,703 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:37,704 - src.bot - INFO - Saved media attachment
+2025-05-15 19:24:37,704 - src.bot - INFO - 
+Processing message 19/22
+2025-05-15 19:24:37,704 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:37,704 - src.bot - INFO - Message type: text
+2025-05-15 19:24:37,704 - src.bot - INFO - Looking up author 2075762424
+2025-05-15 19:24:37,893 - src.bot - INFO - Creating new author: Сергей
+2025-05-15 19:24:37,988 - src.models - INFO - Создан новый автор: Сергей (id: 2075762424)
+2025-05-15 19:24:38,083 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:38,274 - src.bot - INFO - Created author with ID: 19
+2025-05-15 19:24:38,274 - src.bot - INFO - Creating review. Text preview: Фруктов нет при любой формуле питания. Что-то недо
+2025-05-15 19:24:38,371 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:38,466 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:38,656 - src.bot - INFO - Created review with ID: 55
+2025-05-15 19:24:38,656 - src.bot - INFO - 
+Processing message 20/22
+2025-05-15 19:24:38,656 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:38,656 - src.bot - INFO - Message type: text
+2025-05-15 19:24:38,656 - src.bot - INFO - Looking up author 6545825282
+2025-05-15 19:24:38,751 - src.bot - INFO - Creating new author: Екатерина
+2025-05-15 19:24:38,846 - src.models - INFO - Создан новый автор: Екатерина (id: 6545825282)
+2025-05-15 19:24:38,943 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:39,439 - src.bot - INFO - Created author with ID: 20
+2025-05-15 19:24:39,439 - src.bot - INFO - Creating review. Text preview: Критических минусов не наблюдаем,вода горячая есть
+2025-05-15 19:24:39,542 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:39,938 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:40,128 - src.bot - INFO - Created review with ID: 56
+2025-05-15 19:24:40,225 - src.bot - INFO - 
+Processing message 21/22
+2025-05-15 19:24:40,225 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:40,225 - src.bot - INFO - Message type: text
+2025-05-15 19:24:40,226 - src.bot - INFO - Looking up author 5284458002
+2025-05-15 19:24:40,320 - src.bot - INFO - Creating new author: Ольга
+2025-05-15 19:24:40,416 - src.models - INFO - Создан новый автор: Ольга (id: 5284458002)
+2025-05-15 19:24:40,511 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:40,701 - src.bot - INFO - Created author with ID: 21
+2025-05-15 19:24:40,701 - src.bot - INFO - Creating review. Text preview: Жили в этом отеле 2 недели, у нас рок+ был, все ус
+2025-05-15 19:24:40,798 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:40,893 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:41,083 - src.bot - INFO - Created review with ID: 57
+2025-05-15 19:24:41,084 - src.bot - INFO - 
+Processing message 22/22
+2025-05-15 19:24:41,084 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:24:41,084 - src.bot - INFO - Message type: text
+2025-05-15 19:24:41,084 - src.bot - INFO - Looking up author 5120107995
+2025-05-15 19:24:41,180 - src.bot - INFO - Creating new author: Светлана
+2025-05-15 19:24:41,275 - src.models - INFO - Создан новый автор: Светлана (id: 5120107995)
+2025-05-15 19:24:41,370 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:41,560 - src.bot - INFO - Created author with ID: 22
+2025-05-15 19:24:41,561 - src.bot - INFO - Creating review. Text preview: Мы здесь без рок+ всё норм, номер хороший,вода гор
+2025-05-15 19:24:41,657 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:24:41,752 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:24:41,941 - src.bot - INFO - Created review with ID: 58
+2025-05-15 19:24:42,027 - src.bot - INFO - === END SAVING BUFFER ===
+
+2025-05-15 19:42:28,814 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 19:42:28,815 - src.bot - INFO - Starting bot polling...
+2025-05-15 19:43:19,416 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,416 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,416 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,417 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,417 - src.bot - INFO - Message ID: 24636
+2025-05-15 19:43:19,417 - src.bot - INFO - Text content: Он компактный, двухэтажные домики, меня например, не устраивают многоэтажные здания, номера хорошие,
+2025-05-15 19:43:19,417 - src.bot - INFO - Content type: text
+2025-05-15 19:43:19,418 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:43:19,418 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,418 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,418 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,418 - src.bot - INFO - Current buffer size: 1
+2025-05-15 19:43:19,418 - src.bot - INFO - Has text: True
+2025-05-15 19:43:19,418 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,419 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,419 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,419 - src.bot - INFO - Has photo: False
+2025-05-15 19:43:19,419 - src.bot - INFO - Text content: Обед около пляжа, не скажу что АХ, рис сыроват, ракушки ни чё так
+2025-05-15 19:43:19,419 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,419 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:43:19,419 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,420 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,420 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,420 - src.bot - INFO - Current buffer size: 2
+2025-05-15 19:43:19,420 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,420 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,420 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,420 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,420 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,421 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:43:19,421 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,421 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,421 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,421 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,421 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,421 - src.bot - INFO - Current buffer size: 3
+2025-05-15 19:43:19,421 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:43:19,422 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,422 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,422 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,422 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,422 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:43:19,423 - src.bot - INFO - Current buffer size: 4
+2025-05-15 19:43:19,423 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,423 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,423 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,423 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,423 - src.bot - INFO - Current buffer size: 5
+2025-05-15 19:43:19,423 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:43:19,425 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,426 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,427 - src.bot - INFO - Current buffer size: 6
+2025-05-15 19:43:19,427 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,427 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,427 - src.bot - INFO - Forwarded from: 5355013106 (Ирина)
+2025-05-15 19:43:19,427 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,428 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,428 - src.bot - INFO - Current buffer size: 7
+2025-05-15 19:43:19,428 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,428 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,428 - src.bot - INFO - Message ID: 24644
+2025-05-15 19:43:19,428 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,428 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,429 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,429 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,429 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,429 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,429 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,429 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,430 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,431 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,431 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,432 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,432 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,433 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,433 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,433 - src.bot - INFO - Message ID: 24645
+2025-05-15 19:43:19,433 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,433 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,433 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,434 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,434 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,434 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,434 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,434 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,434 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,435 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,435 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,435 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,435 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,435 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,435 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,436 - src.bot - INFO - Message ID: 24646
+2025-05-15 19:43:19,436 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,436 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,436 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,436 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,436 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,436 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,436 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,436 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,437 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,437 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,437 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,437 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,437 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,437 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,437 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,437 - src.bot - INFO - Message ID: 24647
+2025-05-15 19:43:19,438 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,438 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,438 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,438 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,438 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,438 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,438 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,438 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,439 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,439 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,439 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,439 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,439 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,439 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,439 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,439 - src.bot - INFO - Message ID: 24648
+2025-05-15 19:43:19,456 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,456 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,456 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,456 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,456 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,456 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,457 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,457 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,457 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,457 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,457 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,457 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,457 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,458 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,458 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,458 - src.bot - INFO - Message ID: 24649
+2025-05-15 19:43:19,458 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,458 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,458 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,458 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,458 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,458 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,458 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,459 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,459 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,459 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,459 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,459 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,459 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,459 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,460 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,460 - src.bot - INFO - Message ID: 24650
+2025-05-15 19:43:19,460 - src.bot - INFO - Content type: video
+2025-05-15 19:43:19,460 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,460 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,460 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,460 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,460 - src.bot - INFO - Has photo: False
+2025-05-15 19:43:19,460 - src.bot - INFO - Has video: True
+2025-05-15 19:43:19,461 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,461 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,461 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,461 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,461 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,461 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,461 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,461 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,461 - src.bot - INFO - Message ID: 24651
+2025-05-15 19:43:19,461 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,461 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,461 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,463 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,463 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,464 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,464 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,464 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,465 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,465 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,465 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,465 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,466 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,466 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,466 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,466 - src.bot - INFO - Message ID: 24652
+2025-05-15 19:43:19,466 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,467 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,467 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,467 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,467 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,467 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,467 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,467 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,467 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,467 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,468 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,468 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,468 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,468 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,468 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,468 - src.bot - INFO - Message ID: 24653
+2025-05-15 19:43:19,468 - src.bot - INFO - Content type: video
+2025-05-15 19:43:19,468 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,469 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,469 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,469 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,469 - src.bot - INFO - Has photo: False
+2025-05-15 19:43:19,469 - src.bot - INFO - Has video: True
+2025-05-15 19:43:19,469 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,469 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,469 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,469 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,470 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,470 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,470 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,470 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,470 - src.bot - INFO - Message ID: 24654
+2025-05-15 19:43:19,470 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,470 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,470 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,470 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,470 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,470 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,470 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,471 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,471 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,471 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,471 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,471 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,471 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,471 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,471 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,472 - src.bot - INFO - Message ID: 24655
+2025-05-15 19:43:19,472 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,472 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,472 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,473 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,473 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,473 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,473 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,473 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,473 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,473 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,473 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,473 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,474 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,474 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,474 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,474 - src.bot - INFO - Message ID: 24656
+2025-05-15 19:43:19,474 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,474 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,474 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,474 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,475 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,475 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,475 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,475 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,475 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,475 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,475 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,475 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,476 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,476 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,476 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,476 - src.bot - INFO - Message ID: 24657
+2025-05-15 19:43:19,476 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,476 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,476 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,476 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,477 - src.bot - INFO - Has caption: True
+2025-05-15 19:43:19,477 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,477 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,477 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,477 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,478 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,478 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,478 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,478 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,478 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,478 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,478 - src.bot - INFO - Text content: Только вернулись домой из этого отеля. 
+По поводу горничных
+Первые два дня была приятная горничная и
+2025-05-15 19:43:19,479 - src.bot - INFO - Forwarded from: 344567253 (Екатерина)
+2025-05-15 19:43:19,479 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,479 - src.bot - INFO - Current buffer size: 8
+2025-05-15 19:43:19,479 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,479 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,479 - src.bot - INFO - Caption content: Доброго времени суток! Разместились в домике 5 этого отеля 01.10.24. Обратно 12.10.24. Территория бо
+2025-05-15 19:43:19,482 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:43:19,483 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,483 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,483 - src.bot - INFO - Current buffer size: 9
+2025-05-15 19:43:19,483 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,484 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,484 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:43:19,484 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,484 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,484 - src.bot - INFO - Current buffer size: 10
+2025-05-15 19:43:19,506 - src.bot - INFO - Buffer contains: 2 text, 3 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:43:19,506 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,507 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,507 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:43:19,507 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,507 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,508 - src.bot - INFO - Current buffer size: 11
+2025-05-15 19:43:19,508 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,508 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,508 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:43:19,508 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,508 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,508 - src.bot - INFO - Current buffer size: 12
+2025-05-15 19:43:19,508 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,509 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,509 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:43:19,509 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,509 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,509 - src.bot - INFO - Current buffer size: 13
+2025-05-15 19:43:19,509 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,509 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,510 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:43:19,510 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,510 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,510 - src.bot - INFO - Current buffer size: 14
+2025-05-15 19:43:19,510 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,510 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,510 - src.bot - INFO - Caption content: Полотенца для тела, лица и ног были. Два кружка мыла, гель для душа 4 флакона, шампунь 4 флакона. 2 
+2025-05-15 19:43:19,511 - src.bot - INFO - Forwarded from: 5257983368 (Александр)
+2025-05-15 19:43:19,511 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,511 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,511 - src.bot - INFO - Current buffer size: 15
+2025-05-15 19:43:19,570 - src.bot - INFO - Buffer contains: 4 text, 7 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:43:19,570 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,570 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,571 - src.bot - INFO - Text content: Всем привет! Отдыхаем сейчас в отеле) территория класс, номер тоже хороший, да, уставшая мебель, но 
+2025-05-15 19:43:19,571 - src.bot - INFO - Forwarded from: 203852636 (Kate)
+2025-05-15 19:43:19,571 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,571 - src.bot - INFO - Current buffer size: 16
+2025-05-15 19:43:19,572 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,572 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,572 - src.bot - INFO - Forwarded from: 203852636 (Kate)
+2025-05-15 19:43:19,572 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,572 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,572 - src.bot - INFO - Current buffer size: 17
+2025-05-15 19:43:19,573 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,573 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:19,612 - src.bot - INFO - Has photo: 4 sizes
+2025-05-15 19:43:19,612 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,613 - src.bot - INFO - Current buffer size: 18
+2025-05-15 19:43:19,615 - src.bot - INFO - Buffer contains: 5 text, 12 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:43:19,615 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,616 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,617 - src.bot - INFO - Text content: Фруктов нет при любой формуле питания. Что-то недозрелое лежит, это не съедобно. В воллейбол играли 
+2025-05-15 19:43:19,617 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,618 - src.bot - INFO - Forwarded from: 2075762424 (Сергей)
+2025-05-15 19:43:19,618 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,618 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,619 - src.bot - INFO - Text content: Критических минусов не наблюдаем,вода горячая есть,номер убирают каждый день,территория большая и ух
+2025-05-15 19:43:19,619 - src.bot - INFO - Current buffer size: 19
+2025-05-15 19:43:19,619 - src.bot - INFO - Forwarded from: 6545825282 (Екатерина)
+2025-05-15 19:43:19,619 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,619 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,619 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,620 - src.bot - INFO - Current buffer size: 20
+2025-05-15 19:43:19,620 - src.bot - INFO - Text content: Жили в этом отеле 2 недели, у нас рок+ был, все устраивало. Да, немного уставший номерной фонд, да е
+2025-05-15 19:43:19,620 - src.bot - INFO - Forwarded from: 5284458002 (Ольга)
+2025-05-15 19:43:19,622 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,622 - src.bot - INFO - Current buffer size: 21
+2025-05-15 19:43:19,622 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,622 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,622 - src.bot - INFO - Message ID: 24672
+2025-05-15 19:43:19,623 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,623 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,623 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,623 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,623 - src.bot - INFO - Has caption: True
+2025-05-15 19:43:19,624 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,624 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,624 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,624 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,624 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,624 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,625 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,625 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,625 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,625 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,625 - src.bot - INFO - Message ID: 24673
+2025-05-15 19:43:19,625 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,626 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,626 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,626 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,626 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,626 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,627 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,627 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,627 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,627 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,628 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,628 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,628 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,628 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,628 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,628 - src.bot - INFO - Message ID: 24674
+2025-05-15 19:43:19,628 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,628 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,628 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,629 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,649 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,649 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,649 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,649 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,650 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,650 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,651 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,651 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,651 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,652 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,652 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,652 - src.bot - INFO - Message ID: 24675
+2025-05-15 19:43:19,652 - src.bot - INFO - Content type: video
+2025-05-15 19:43:19,652 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,653 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,653 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,654 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,654 - src.bot - INFO - Has photo: False
+2025-05-15 19:43:19,654 - src.bot - INFO - Has video: True
+2025-05-15 19:43:19,654 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,655 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,655 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,655 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,655 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,655 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,655 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,656 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,656 - src.bot - INFO - Message ID: 24676
+2025-05-15 19:43:19,656 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,656 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,656 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,656 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,657 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,657 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,657 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,657 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,657 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,657 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,657 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,657 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,658 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,658 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,658 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,658 - src.bot - INFO - Message ID: 24677
+2025-05-15 19:43:19,658 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,658 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,659 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,659 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,659 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,659 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,659 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,660 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,660 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,660 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,660 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,660 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,660 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,660 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,661 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,661 - src.bot - INFO - Message ID: 24678
+2025-05-15 19:43:19,661 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,661 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,661 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,661 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,661 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,661 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,661 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,661 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,661 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,663 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,664 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,665 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,665 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,665 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,665 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,666 - src.bot - INFO - Message ID: 24679
+2025-05-15 19:43:19,666 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,666 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,666 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,667 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,667 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,667 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,667 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,667 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,667 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,667 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,668 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,668 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,668 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,668 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,668 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,668 - src.bot - INFO - Message ID: 24680
+2025-05-15 19:43:19,668 - src.bot - INFO - Content type: photo
+2025-05-15 19:43:19,668 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,669 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,669 - src.bot - INFO - Has text: False
+2025-05-15 19:43:19,669 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,669 - src.bot - INFO - Has photo: True
+2025-05-15 19:43:19,669 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,669 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,669 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,669 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,670 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,670 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,670 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,670 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,670 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,670 - src.bot - INFO - Message ID: 24681
+2025-05-15 19:43:19,670 - src.bot - INFO - Content type: text
+2025-05-15 19:43:19,670 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,670 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,670 - src.bot - INFO - Has text: True
+2025-05-15 19:43:19,670 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,670 - src.bot - INFO - Has photo: False
+2025-05-15 19:43:19,671 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,671 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,671 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,671 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,671 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,671 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,671 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,672 - src.bot - INFO - === INCOMING MESSAGE ===
+2025-05-15 19:43:19,672 - src.bot - INFO - From user: 800794195 (Константин)
+2025-05-15 19:43:19,672 - src.bot - INFO - Message ID: 24682
+2025-05-15 19:43:19,672 - src.bot - INFO - Content type: text
+2025-05-15 19:43:19,672 - src.bot - INFO - Is forwarded: False
+2025-05-15 19:43:19,672 - src.bot - INFO - Current state: ReviewStates:collecting_reviews
+2025-05-15 19:43:19,673 - src.bot - INFO - Has text: True
+2025-05-15 19:43:19,673 - src.bot - INFO - Has caption: False
+2025-05-15 19:43:19,673 - src.bot - INFO - Has photo: False
+2025-05-15 19:43:19,673 - src.bot - INFO - Has video: False
+2025-05-15 19:43:19,673 - src.bot - INFO - Has voice: False
+2025-05-15 19:43:19,674 - src.bot - INFO - Has document: False
+2025-05-15 19:43:19,674 - src.bot - INFO - Has audio: False
+2025-05-15 19:43:19,674 - src.bot - INFO - Has sticker: False
+2025-05-15 19:43:19,674 - src.bot - INFO - Has animation: False
+2025-05-15 19:43:19,674 - src.bot - INFO - === END INCOMING MESSAGE ===
+
+2025-05-15 19:43:19,674 - src.bot - INFO - === START BUFFERING MESSAGE ===
+2025-05-15 19:43:19,675 - src.bot - INFO - Message type: text
+2025-05-15 19:43:19,675 - src.bot - INFO - Text content: Мы здесь без рок+ всё норм, номер хороший,вода гор.есть ,уборка каждый день, полотенца меняют,покуша
+2025-05-15 19:43:19,675 - src.bot - INFO - Forwarded from: 5120107995 (Светлана)
+2025-05-15 19:43:19,675 - src.bot - INFO - Adding to buffer: отель - Arenas Doradas
+2025-05-15 19:43:19,675 - src.bot - INFO - Current buffer size: 22
+2025-05-15 19:43:19,707 - src.bot - INFO - Buffer contains: 9 text, 14 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:43:26,509 - src.bot - INFO - === START SAVING BUFFER ===
+2025-05-15 19:43:26,510 - src.bot - INFO - Current buffer size: 22
+2025-05-15 19:43:26,510 - src.bot - INFO - Message types in buffer:
+2025-05-15 19:43:26,510 - src.bot - INFO - 1. Type: text, From: Ирина
+2025-05-15 19:43:26,510 - src.bot - INFO - 2. Type: text, From: Ирина
+2025-05-15 19:43:26,510 - src.bot - INFO - 3. Type: photo, From: Ирина
+2025-05-15 19:43:26,511 - src.bot - INFO - 4. Type: photo, From: Ирина
+2025-05-15 19:43:26,511 - src.bot - INFO - 5. Type: photo, From: Ирина
+2025-05-15 19:43:26,511 - src.bot - INFO - 6. Type: photo, From: Ирина
+2025-05-15 19:43:26,511 - src.bot - INFO - 7. Type: photo, From: Ирина
+2025-05-15 19:43:26,512 - src.bot - INFO - 8. Type: text, From: Екатерина
+2025-05-15 19:43:26,512 - src.bot - INFO - 9. Type: photo, From: Александр
+2025-05-15 19:43:26,512 - src.bot - INFO - 10. Type: photo, From: Александр
+2025-05-15 19:43:26,512 - src.bot - INFO - 11. Type: photo, From: Александр
+2025-05-15 19:43:26,512 - src.bot - INFO - 12. Type: photo, From: Александр
+2025-05-15 19:43:26,512 - src.bot - INFO - 13. Type: photo, From: Александр
+2025-05-15 19:43:26,512 - src.bot - INFO - 14. Type: photo, From: Александр
+2025-05-15 19:43:26,512 - src.bot - INFO - 15. Type: photo, From: Александр
+2025-05-15 19:43:26,513 - src.bot - INFO - 16. Type: text, From: Kate
+2025-05-15 19:43:26,513 - src.bot - INFO - 17. Type: photo, From: Kate
+2025-05-15 19:43:26,515 - src.bot - INFO - 19. Type: text, From: Сергей
+2025-05-15 19:43:26,515 - src.bot - INFO - 20. Type: text, From: Екатерина
+2025-05-15 19:43:26,515 - src.bot - INFO - 21. Type: text, From: Ольга
+2025-05-15 19:43:26,515 - src.bot - INFO - 22. Type: text, From: Светлана
+2025-05-15 19:43:26,516 - src.bot - INFO - Starting to save 22 messages
+2025-05-15 19:43:26,516 - src.bot - INFO - Buffer contains: 11 text, 14 photo, 0 video, 0 voice, 0 doc, 0 audio, 0 animation messages
+2025-05-15 19:43:26,516 - src.bot - INFO - 
+Processing message 1/22
+2025-05-15 19:43:26,516 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:26,516 - src.bot - INFO - Message type: text
+2025-05-15 19:43:26,516 - src.bot - INFO - Looking up author 5355013106
+2025-05-15 19:43:26,628 - src.bot - INFO - Found existing author with ID: 13
+2025-05-15 19:43:26,629 - src.bot - INFO - Creating review. Text preview: Он компактный, двухэтажные домики, меня например, 
+2025-05-15 19:43:26,732 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:26,832 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:27,030 - src.bot - INFO - Created review with ID: 59
+2025-05-15 19:43:27,030 - src.bot - INFO - 
+Processing message 2/22
+2025-05-15 19:43:27,031 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:27,031 - src.bot - INFO - Message type: text
+2025-05-15 19:43:27,031 - src.bot - INFO - Creating review. Text preview: Обед около пляжа, не скажу что АХ, рис сыроват, ра
+2025-05-15 19:43:27,229 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:27,328 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:27,526 - src.bot - INFO - Created review with ID: 60
+2025-05-15 19:43:27,527 - src.bot - INFO - 
+Processing message 3/22
+2025-05-15 19:43:27,527 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:27,527 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:27,527 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:27,724 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:27,823 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:28,021 - src.bot - INFO - Created review with ID: 61
+2025-05-15 19:43:28,021 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:28,122 - src.models - INFO - Создан новый медиафайл: photo для отзыва #61
+2025-05-15 19:43:28,222 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:28,222 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:28,222 - src.bot - INFO - 
+Processing message 4/22
+2025-05-15 19:43:28,222 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:28,223 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:28,223 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:28,525 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:28,626 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:28,822 - src.bot - INFO - Created review with ID: 62
+2025-05-15 19:43:28,823 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:28,922 - src.models - INFO - Создан новый медиафайл: photo для отзыва #62
+2025-05-15 19:43:29,022 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:29,022 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:29,022 - src.bot - INFO - 
+Processing message 5/22
+2025-05-15 19:43:29,023 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:29,023 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:29,023 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:29,322 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:29,423 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:29,620 - src.bot - INFO - Created review with ID: 63
+2025-05-15 19:43:29,620 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:29,721 - src.models - INFO - Создан новый медиафайл: photo для отзыва #63
+2025-05-15 19:43:29,822 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:29,823 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:29,910 - src.bot - INFO - 
+Processing message 6/22
+2025-05-15 19:43:29,911 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:29,911 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:29,911 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:30,208 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:30,307 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:30,505 - src.bot - INFO - Created review with ID: 64
+2025-05-15 19:43:30,507 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:30,606 - src.models - INFO - Создан новый медиафайл: photo для отзыва #64
+2025-05-15 19:43:30,707 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:30,707 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:30,707 - src.bot - INFO - 
+Processing message 7/22
+2025-05-15 19:43:30,708 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:30,708 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:30,708 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:31,006 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:31,105 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:31,304 - src.bot - INFO - Created review with ID: 65
+2025-05-15 19:43:31,305 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:31,406 - src.models - INFO - Создан новый медиафайл: photo для отзыва #65
+2025-05-15 19:43:31,508 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:31,509 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:31,509 - src.bot - INFO - 
+Processing message 8/22
+2025-05-15 19:43:31,509 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:31,510 - src.bot - INFO - Message type: text
+2025-05-15 19:43:31,510 - src.bot - INFO - Looking up author 344567253
+2025-05-15 19:43:31,708 - src.bot - INFO - Found existing author with ID: 15
+2025-05-15 19:43:31,708 - src.bot - INFO - Creating review. Text preview: Только вернулись домой из этого отеля. 
+По поводу 
+2025-05-15 19:43:31,809 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:31,909 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:32,411 - src.bot - INFO - Created review with ID: 66
+2025-05-15 19:43:32,412 - src.bot - INFO - 
+Processing message 9/22
+2025-05-15 19:43:32,412 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:32,412 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:32,412 - src.bot - INFO - Looking up author 5257983368
+2025-05-15 19:43:32,510 - src.bot - INFO - Found existing author with ID: 16
+2025-05-15 19:43:32,511 - src.bot - INFO - Creating review. Text preview: Доброго времени суток! Разместились в домике 5 это
+2025-05-15 19:43:32,611 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:32,710 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:32,910 - src.bot - INFO - Created review with ID: 67
+2025-05-15 19:43:32,910 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:33,012 - src.models - INFO - Создан новый медиафайл: photo для отзыва #67
+2025-05-15 19:43:33,173 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:33,174 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:33,174 - src.bot - INFO - 
+Processing message 10/22
+2025-05-15 19:43:33,175 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:33,175 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:33,176 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:33,501 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:33,600 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:33,798 - src.bot - INFO - Created review with ID: 68
+2025-05-15 19:43:33,798 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:33,897 - src.models - INFO - Создан новый медиафайл: photo для отзыва #68
+2025-05-15 19:43:33,997 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:33,997 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:34,122 - src.bot - INFO - 
+Processing message 11/22
+2025-05-15 19:43:34,122 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:34,122 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:34,123 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:34,417 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:34,516 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:34,715 - src.bot - INFO - Created review with ID: 69
+2025-05-15 19:43:34,715 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:34,815 - src.models - INFO - Создан новый медиафайл: photo для отзыва #69
+2025-05-15 19:43:34,913 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:34,913 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:34,913 - src.bot - INFO - 
+Processing message 12/22
+2025-05-15 19:43:34,914 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:34,914 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:34,914 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:35,211 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:35,311 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:35,512 - src.bot - INFO - Created review with ID: 70
+2025-05-15 19:43:35,512 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:35,612 - src.models - INFO - Создан новый медиафайл: photo для отзыва #70
+2025-05-15 19:43:35,711 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:35,712 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:35,712 - src.bot - INFO - 
+Processing message 13/22
+2025-05-15 19:43:35,712 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:35,712 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:35,712 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:36,013 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:36,112 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:36,309 - src.bot - INFO - Created review with ID: 71
+2025-05-15 19:43:36,310 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:36,409 - src.models - INFO - Создан новый медиафайл: photo для отзыва #71
+2025-05-15 19:43:36,511 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:36,512 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:36,512 - src.bot - INFO - 
+Processing message 14/22
+2025-05-15 19:43:36,513 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:36,513 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:36,513 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:36,811 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:36,910 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:37,108 - src.bot - INFO - Created review with ID: 72
+2025-05-15 19:43:37,109 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:37,218 - src.models - INFO - Создан новый медиафайл: photo для отзыва #72
+2025-05-15 19:43:37,316 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:37,317 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:37,317 - src.bot - INFO - 
+Processing message 15/22
+2025-05-15 19:43:37,318 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:37,318 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:37,318 - src.bot - INFO - Creating review. Text preview: Полотенца для тела, лица и ног были. Два кружка мы
+2025-05-15 19:43:37,614 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:37,721 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:37,920 - src.bot - INFO - Created review with ID: 73
+2025-05-15 19:43:37,920 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:38,019 - src.models - INFO - Создан новый медиафайл: photo для отзыва #73
+2025-05-15 19:43:38,118 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:38,118 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:38,200 - src.bot - INFO - 
+Processing message 16/22
+2025-05-15 19:43:38,200 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:38,200 - src.bot - INFO - Message type: text
+2025-05-15 19:43:38,200 - src.bot - INFO - Looking up author 203852636
+2025-05-15 19:43:38,397 - src.bot - INFO - Found existing author with ID: 17
+2025-05-15 19:43:38,397 - src.bot - INFO - Creating review. Text preview: Всем привет! Отдыхаем сейчас в отеле) территория к
+2025-05-15 19:43:38,498 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:38,598 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:38,796 - src.bot - INFO - Created review with ID: 74
+2025-05-15 19:43:38,797 - src.bot - INFO - 
+Processing message 17/22
+2025-05-15 19:43:38,797 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:38,797 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:38,797 - src.bot - INFO - Creating review. Text preview: No text
+2025-05-15 19:43:38,997 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:39,100 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:39,298 - src.bot - INFO - Created review with ID: 75
+2025-05-15 19:43:39,299 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:39,398 - src.models - INFO - Создан новый медиафайл: photo для отзыва #75
+2025-05-15 19:43:39,498 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:39,498 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:39,498 - src.bot - INFO - 
+Processing message 18/22
+2025-05-15 19:43:39,498 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:39,499 - src.bot - INFO - Message type: photo
+2025-05-15 19:43:39,499 - src.bot - INFO - Looking up author 2088285604
+2025-05-15 19:43:39,698 - src.bot - INFO - Found existing author with ID: 18
+2025-05-15 19:43:39,698 - src.bot - INFO - Creating review. Text preview: Еда тут правда не очень , но голодными точно не ос
+2025-05-15 19:43:39,798 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:39,897 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:40,093 - src.bot - INFO - Created review with ID: 76
+2025-05-15 19:43:40,094 - src.bot - INFO - Processing photo attachment with 4 sizes
+2025-05-15 19:43:40,193 - src.models - INFO - Создан новый медиафайл: photo для отзыва #76
+2025-05-15 19:43:40,300 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:40,301 - src.bot - INFO - Saved media attachment
+2025-05-15 19:43:40,301 - src.bot - INFO - 
+Processing message 19/22
+2025-05-15 19:43:40,302 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:40,302 - src.bot - INFO - Message type: text
+2025-05-15 19:43:40,302 - src.bot - INFO - Looking up author 2075762424
+2025-05-15 19:43:40,498 - src.bot - INFO - Found existing author with ID: 19
+2025-05-15 19:43:40,499 - src.bot - INFO - Creating review. Text preview: Фруктов нет при любой формуле питания. Что-то недо
+2025-05-15 19:43:40,599 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:40,698 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:40,895 - src.bot - INFO - Created review with ID: 77
+2025-05-15 19:43:40,895 - src.bot - INFO - 
+Processing message 20/22
+2025-05-15 19:43:40,895 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:40,896 - src.bot - INFO - Message type: text
+2025-05-15 19:43:40,896 - src.bot - INFO - Looking up author 6545825282
+2025-05-15 19:43:40,994 - src.bot - INFO - Found existing author with ID: 20
+2025-05-15 19:43:40,995 - src.bot - INFO - Creating review. Text preview: Критических минусов не наблюдаем,вода горячая есть
+2025-05-15 19:43:41,094 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:41,195 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:41,396 - src.bot - INFO - Created review with ID: 78
+2025-05-15 19:43:41,486 - src.bot - INFO - 
+Processing message 21/22
+2025-05-15 19:43:41,486 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:41,486 - src.bot - INFO - Message type: text
+2025-05-15 19:43:41,486 - src.bot - INFO - Looking up author 5284458002
+2025-05-15 19:43:41,585 - src.bot - INFO - Found existing author with ID: 21
+2025-05-15 19:43:41,585 - src.bot - INFO - Creating review. Text preview: Жили в этом отеле 2 недели, у нас рок+ был, все ус
+2025-05-15 19:43:41,685 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:41,784 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:41,981 - src.bot - INFO - Created review with ID: 79
+2025-05-15 19:43:41,982 - src.bot - INFO - 
+Processing message 22/22
+2025-05-15 19:43:41,983 - src.bot - INFO - Category: отель, Item: Arenas Doradas
+2025-05-15 19:43:41,983 - src.bot - INFO - Message type: text
+2025-05-15 19:43:41,983 - src.bot - INFO - Looking up author 5120107995
+2025-05-15 19:43:42,083 - src.bot - INFO - Found existing author with ID: 22
+2025-05-15 19:43:42,083 - src.bot - INFO - Creating review. Text preview: Мы здесь без рок+ всё норм, номер хороший,вода гор
+2025-05-15 19:43:42,183 - src.models - INFO - Создан новый отзыв: категория 'отель', объект 'Arenas Doradas'
+2025-05-15 19:43:42,285 - src.models - INFO - Транзакция успешно завершена
+2025-05-15 19:43:42,484 - src.bot - INFO - Created review with ID: 80
+2025-05-15 19:43:42,745 - src.bot - INFO - === END SAVING BUFFER ===
+
+2025-05-15 21:01:34,754 - src.bot - INFO - Бот инициализирован с admin_id: 800794195
+2025-05-15 21:01:34,755 - src.bot - INFO - Starting bot polling...

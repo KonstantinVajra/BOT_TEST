@@ -67,6 +67,7 @@ class ReviewBot:
         self.current_selection: Dict[int, dict] = {}  # Store current user selections
         self.category_commands = {}  # Store mapping between commands and categories
         self.message_buffer = []  # Буфер для накопления сообщений
+        self.max_buffer_size = 100  # Максимальный размер буфера
         self.setup_handlers()
         self.setup_commands()
         logger.info(f"Бот инициализирован с admin_id: {admin_id}")
@@ -266,10 +267,25 @@ class ReviewBot:
         # Set state
         self.bot.set_state(message.from_user.id, ReviewStates.collecting_reviews, message.chat.id)
 
+    def check_message_duplicate(self, message):
+        """Проверяет, не было ли это сообщение уже переслано ранее"""
+        return False  # Временно отключаем проверку дубликатов
+
     def buffer_review(self, message):
         """Add message to buffer for batch processing"""
         logger.info("=== START BUFFERING MESSAGE ===")
         logger.info(f"Message type: {message.content_type}")
+        
+        # Проверяем размер буфера
+        if len(self.message_buffer) >= self.max_buffer_size:
+            logger.warning(f"Buffer is full ({self.max_buffer_size} messages). Please save current buffer first.")
+            self.bot.reply_to(
+                message, 
+                f"⚠️ Буфер заполнен ({self.max_buffer_size} сообщений).\n"
+                "Пожалуйста, сохраните текущие отзывы командой /save"
+            )
+            return
+
         if message.text:
             logger.info(f"Text content: {message.text[:100]}")
         if message.caption:
@@ -302,25 +318,6 @@ class ReviewBot:
             self.bot.reply_to(message, "Сначала выберите категорию и объект через меню.")
             return
 
-        # Проверяем на дубликаты
-        is_duplicate, existing_review = self.check_duplicate_review(
-            message,
-            message.forward_from.id,
-            selection['category'],
-            selection['item']
-        )
-
-        if is_duplicate:
-            warning_msg = (
-                "⚠️ Обнаружен возможный дубликат отзыва!\n\n"
-                f"Существующий отзыв от {existing_review.timestamp.strftime('%d.%m.%Y %H:%M')}:\n"
-                f"{existing_review.text[:100]}...\n\n"
-                "Вы уверены, что хотите добавить этот отзыв?\n"
-                "Используйте /save для сохранения или /clear для очистки буфера."
-            )
-            self.bot.reply_to(message, warning_msg)
-            logger.warning(f"Duplicate review detected for author {message.forward_from.id}")
-
         logger.info(f"Adding to buffer: {selection['category']} - {selection['item']}")
         
         # Добавляем сообщение в буфер вместе с информацией о категории и объекте
@@ -333,10 +330,10 @@ class ReviewBot:
         buffer_size = len(self.message_buffer)
         logger.info(f"Current buffer size: {buffer_size}")
         
-        # Показываем статус каждые 5 сообщений
-        if buffer_size % 5 == 0:
+        # Показываем статус каждые 5 сообщений или когда буфер почти полон
+        if buffer_size % 5 == 0 or buffer_size >= self.max_buffer_size * 0.9:
             # Анализируем содержимое буфера
-            text_msgs = sum(1 for m in self.message_buffer if m['message'].text and not m['message'].photo and not m['message'].video)
+            text_msgs = sum(1 for m in self.message_buffer if (m['message'].text or m['message'].caption))
             photo_msgs = sum(1 for m in self.message_buffer if m['message'].photo)
             video_msgs = sum(1 for m in self.message_buffer if m['message'].video)
             voice_msgs = sum(1 for m in self.message_buffer if m['message'].voice)
@@ -354,16 +351,24 @@ class ReviewBot:
             if anim_msgs: status_msg += f"• GIF: {anim_msgs}\n"
             status_msg += f"\nКатегория: {selection['category']}\n"
             status_msg += f"Объект: {selection['item']}\n"
-            status_msg += "Используйте /save для сохранения в базу"
+            
+            # Добавляем предупреждение, если буфер почти полон
+            if buffer_size >= self.max_buffer_size * 0.9:
+                status_msg += f"\n⚠️ Буфер почти полон! Максимум: {self.max_buffer_size}"
+            
+            status_msg += "\nИспользуйте /save для сохранения в базу"
             
             self.bot.reply_to(message, status_msg)
             logger.info(f"Buffer contains: {text_msgs} text, {photo_msgs} photo, {video_msgs} video, {voice_msgs} voice, {doc_msgs} doc, {audio_msgs} audio, {anim_msgs} animation messages")
-        
-        logger.info("=== END BUFFERING MESSAGE ===\n")
 
     def handle_save_buffer(self, message):
         """Save all buffered messages to database"""
         logger.info("=== START SAVING BUFFER ===")
+        logger.info(f"Current buffer size: {len(self.message_buffer)}")
+        logger.info("Message types in buffer:")
+        for idx, item in enumerate(self.message_buffer):
+            msg = item['message']
+            logger.info(f"{idx+1}. Type: {msg.content_type}, From: {msg.forward_from.first_name if msg.forward_from else 'Unknown'}")
         
         if message.from_user.id != self.admin_id:
             logger.warning(f"Unauthorized save attempt from user {message.from_user.id}")
@@ -378,7 +383,7 @@ class ReviewBot:
         logger.info(f"Starting to save {buffer_size} messages")
         
         # Анализируем содержимое буфера перед сохранением
-        text_msgs = sum(1 for m in self.message_buffer if m['message'].text and not m['message'].photo and not m['message'].video)
+        text_msgs = sum(1 for m in self.message_buffer if (m['message'].text or m['message'].caption))
         photo_msgs = sum(1 for m in self.message_buffer if m['message'].photo)
         video_msgs = sum(1 for m in self.message_buffer if m['message'].video)
         voice_msgs = sum(1 for m in self.message_buffer if m['message'].voice)
@@ -391,6 +396,7 @@ class ReviewBot:
         try:
             saved_count = 0
             errors_count = 0
+            skipped_count = 0  # Счетчик пропущенных дубликатов
             authors_cache = {}  # Кэш для авторов
             media_saved = 0
 
@@ -400,6 +406,12 @@ class ReviewBot:
                     logger.info(f"\nProcessing message {idx}/{buffer_size}")
                     logger.info(f"Category: {item['category']}, Item: {item['item']}")
                     logger.info(f"Message type: {msg.content_type}")
+                    
+                    # Проверяем на дубликаты
+                    if self.check_exact_duplicate(msg, item['category'], item['item']):
+                        logger.info(f"Skipping duplicate message {idx}")
+                        skipped_count += 1
+                        continue
                     
                     # Получаем или создаем автора из кэша
                     author_id = msg.forward_from.id
@@ -535,7 +547,8 @@ class ReviewBot:
                 f"Всего сообщений: {buffer_size}\n"
                 f"Успешно сохранено: {saved_count}\n"
                 f"Медиафайлов сохранено: {media_saved}\n"
-                f"Ошибок: {errors_count}"
+                f"Ошибок: {errors_count}\n"
+                f"Пропущено дубликатов: {skipped_count}"
             )
             
             self.bot.reply_to(message, status_msg)
@@ -580,47 +593,32 @@ class ReviewBot:
             "/help - показать эту справку"
         )
 
-    def check_duplicate_review(self, message, author_id, category, item):
-        """Проверяет наличие дубликатов отзыва"""
+    def check_exact_duplicate(self, message, category, item):
+        """Проверяет наличие идентичного отзыва в базе"""
         try:
             # Получаем текст отзыва
             review_text = message.text if message.text else message.caption
             if not review_text:
-                return False, None
+                return False
 
-            # Проверяем отзывы автора за последние 24 часа
-            yesterday = datetime.now() - timedelta(days=1)
-            recent_review = self.db.query(Review)\
+            # Ищем точно такой же отзыв с тем же автором
+            existing = self.db.query(Review)\
                 .join(Author)\
                 .filter(
-                    Author.telegram_id == author_id,
+                    Review.text == review_text,
                     Review.category == category,
                     Review.reference_name == item,
-                    Review.timestamp >= yesterday
+                    Author.telegram_id == message.forward_from.id
                 )\
-                .order_by(Review.timestamp.desc())\
                 .first()
 
-            if recent_review:
-                # Если найден недавний отзыв, проверяем схожесть текста
-                if recent_review.text and review_text:
-                    # Простое сравнение текста (можно улучшить алгоритм)
-                    similarity = len(set(review_text.split()) & set(recent_review.text.split())) / \
-                               len(set(review_text.split() + recent_review.text.split()))
-                    
-                    if similarity > 0.7:  # Порог схожести 70%
-                        return True, recent_review
-
-            return False, None
+            return existing is not None
 
         except Exception as e:
             logger.error(f"Ошибка при проверке дубликатов: {str(e)}", exc_info=True)
-            return False, None
+            return False
 
     def run(self):
-        if not check_bot_instance():
-            logger.error("Bot instance already running. Exiting.")
-            return
         try:
             logger.info("Starting bot polling...")
             self.bot.polling()

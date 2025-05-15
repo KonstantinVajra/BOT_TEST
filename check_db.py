@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, text
 from src.models import Author, Review, Media, Base
 
 # Connection string
-DATABASE_URL = "postgresql://gen_user:%2CPw0VjKC%5CY%5C2%3FP@46.19.64.78:5432/default_db"
+DATABASE_URL = "postgresql://gen_user:Kmkm72timeweb@46.19.64.78:5432/default_db"
 
 def check_database():
     try:
